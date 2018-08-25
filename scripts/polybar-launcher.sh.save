@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+
+# Terminate already running bar instances
+killall -q polybar
+
+# Wait until the processes have been shut down
+while pgrep -x polybar >/dev/null; do sleep 1; done
+
+#get colors tranparent
+source ~/.cache/wal/colors.sh
+
+# export envar with alpha set.
+export color0_alpha="#A0${color0/'#'}"
+export color1_alpha="#FF${color1/'#'}"
+export color2_alpha="#FF${color2/'#'}"
+export color3_alpha="#FF${color3/'#'}"
+export color4_alpha="#22${color4/'#'}"
+export color5_alpha="#22${color5/'#'}"
+export color6_alpha="#22${color6/'#'}"
+export color7_alpha="#22${color7/'#'}"
+export color8_alpha="#FF${color8/'#'}"
+
+# Launch top bar
+polybar bar0

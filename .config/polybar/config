@@ -1,0 +1,127 @@
+[bar/bar0]
+width = 100%
+height = 16
+
+background = ${env:bg_a}
+foreground = ${env:fg_a}
+
+font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
+
+padding-top = 4
+
+#modules
+modules-left = pointright i3 seperator wlan seperator eth seperator
+modules-center = xwindow seperator music
+modules-right = seperator vol seperator  cpu seperator mem seperator clock  pointleft
+
+;wm-restack = i3
+;override-redirect = true
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:50:...%
+
+
+[module/cpu]
+type = internal/cpu
+interval = 1
+format-prefix = CPU: 
+format-prefix-foreground=${env:fg_prefix_a}
+label = %percentage:2%%
+
+[module/seperator]
+type = custom/text
+content-foreground = ${env:sep_a}
+content = "   "
+
+[module/pointleft]
+content-foreground = ${env:sep_a}
+type = custom/text
+content = " "
+
+[module/pointright]
+content-foreground = ${env:sep_a}
+type = custom/text
+content = " "
+
+[module/i3]
+type = internal/i3
+strip-wsnumbers = true
+
+format = <label-state> <label-mode>
+
+label-separator = |
+label-separator-padding = 1
+label-separator-foreground = ${env:sep_a}
+label-focused =  %name%
+label-unfocused = %index%: %name%
+
+[module/eth]
+type = internal/network
+interface = enp0s25
+interval = 3.0
+label-connected = eth: %local_ip% up: %upspeed% down: %downspeed%
+format-disconnected = eth: down
+
+[module/wlan]
+type = internal/network
+interface = wlo1
+interval = 3.0
+label-connected = WLN: %local_ip% up: %upspeed% down: %downspeed%
+format-disconnected = wlo1: down
+
+
+[module/mem]
+type = internal/memory
+interval = 2
+format-prefix = "MEM: "
+format-prefix-foreground=${env:fg_prefix_a}
+label = %percentage_used%%
+
+[module/clock]
+type = internal/date
+interval = 1
+date = "%Y.%m.%d %a"
+time = "%H:%M:%S"
+label = %date% %time%
+
+[module/vol]
+type = internal/alsa
+
+; Soundcard to be used
+; Usually in the format hw:# where # is the card number
+; You can find the different card numbers in `/proc/asound/cards`
+master-soundcard = default
+: speaker-soundcard = 0
+; headphone-soundcard = 0
+
+interval = 1
+
+format-volume = VOL: <label-volume> <bar-volume>
+label-muted = VOL: muted
+
+bar-volume-width = 10
+bar-volume-fill = =
+bar-volume-fill-foreground = ${env:fg_a}
+bar-volume-empty = -
+bar-volume-empty-foreground = ${env:fg_prefix_a}
+bar-volume-indicator = ><
+
+[module/music]
+type = internal/mpd
+host = 127.0.0.1
+
+format-online = MPD: <label-song> @ <label-time> <bar-progress>
+format-offline = MPD: not running
+label-song = %artist% - %title%
+
+bar-progress-width = 15
+bar-progress-fill = =
+bar-progress-fill-foreground = ${env:fg_a}
+bar-progress-empty = -
+bar-progress-empty-foreground = ${env:fg_prefix_a}
+bar-progress-indicator = >
+
