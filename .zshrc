@@ -4,7 +4,8 @@
 
 #ALIASES
 alias yt-dl-song="youtube-dl -x --audio-format best --audio-quality 0 -i --add-metadata --metadata-from-title \"'(?P<artist>.+?)\s*-\s*(?P<title>.+?)-.*'\" "
-
+alias fucking="sudo "
+eval $(thefuck --alias fuck)
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/nemesis/.oh-my-zsh"
