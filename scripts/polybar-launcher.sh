@@ -27,10 +27,15 @@ source ~/.cache/wal/colors.sh
 #export color14_alpha="#FF${color14/'#'}"
 #export color15_alpha="#FF${color15/'#'}"
 
-export fg_a="#FF${color5/'#'}"
-export bg_a="#20${color14/'#'}"
+#0xBF is equal to the 0.75 transparency set for the terminals in pywal
+export fg_a="#FF${color15/'#'}"
+export bg_a="#BF${color0/'#'}"
 export fg_prefix_a="#CC${color8/'#'}"
-export sep_a="#CC${color1/'#'}"
+export sep_a="#CC${color5/'#'}"
+export bar_primary_a="#FF${color12/'#'}"
+export bar_seperator_a="#FF${color6/'#'}"
+export bar_secondary_a="#CC${color3/'#'}"
+
 
 # Launch top bar
-polybar bar0
+polybar bar0 -l trace
