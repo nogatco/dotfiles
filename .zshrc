@@ -6,6 +6,7 @@
 alias yt-dl-song="youtube-dl -x --audio-format best --audio-quality 0 -i --add-metadata --metadata-from-title \"'(?P<artist>.+?)\s*-\s*(?P<title>.+?)-.*'\" "
 alias yt-dl-cm-s="youtube-dl -x --audio-format best --audio-quality 0 -i --add-metadata --metadata-from-title"
 alias fucking="sudo "
+alias start-ssh-agent=eval "$(ssh-agent -s)"
 eval $(thefuck --alias fuck)
 
 # Path to your oh-my-zsh installation.
