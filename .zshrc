@@ -6,8 +6,33 @@
 alias yt-dl-song="youtube-dl -x --audio-format best --audio-quality 0 -i --add-metadata --metadata-from-title \"'(?P<artist>.+?)\s*-\s*(?P<title>.+?)-.*'\" "
 alias yt-dl-cm-s="youtube-dl -x --audio-format best --audio-quality 0 -i --add-metadata --metadata-from-title"
 alias fucking="sudo "
-alias start-ssh-agent=eval "$(ssh-agent -s)"
 eval $(thefuck --alias fuck)
+
+#START SSH-AGENT on startup, so you only need to ssh-add if you want to use your ssh-key
+SSH_ENV="$HOME/.ssh/environment"
+
+function start_agent {
+    echo "Initialising new SSH agent..."
+    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+    echo succeeded
+    chmod 600 "${SSH_ENV}"
+    . "${SSH_ENV}" > /dev/null
+    #/usr/bin/ssh-add;
+}
+
+# Source SSH settings, if applicable
+
+if [ -f "${SSH_ENV}" ]; then
+    . "${SSH_ENV}" > /dev/null
+    #ps ${SSH_AGENT_PID} doesn't work under cywgin
+    ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+        start_agent;
+    }
+else
+    start_agent;
+fi
+
+
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/nemesis/.oh-my-zsh"
