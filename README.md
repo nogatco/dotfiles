@@ -15,7 +15,7 @@ The goal of this rice is for it to be completely controlled by pywal, so that ad
 - spacemacs
 - nvim
 - powerlevel9k:oh-my-zsh@zsh
-- oomox OR arc theme
+- arc theme
 - compton
 - ranger
 - ncmpcpp
@@ -23,15 +23,15 @@ The goal of this rice is for it to be completely controlled by pywal, so that ad
 
 ## Install
 0. Install an arch install with a non-root user and the tools above
-1. copy the dotfiles. (Paths in the repo are relative to ~/)
-2.run `wal -i path/to/your/wallpaper -a 75 -g` where -a sets the urxvt opacity and -g is used for oomox 
+1. Copy the dotfiles. (Paths in the repo are relative to ~/)
+2. set the theme
 
-## change theme
+## change/set theme
 The color sheme is completely controlled by pywal, so:
 
-0. run `wal -i path/to/your/new/wallpaper -a 75 -g`
-1. reload i3 with Super+Shift+R (This is just so polybar restarts. You could also just run the scripts/polybar-launcher.sh 
-manually)
+0. Open ranger
+1. Select the new image
+2. Press `bg`
 
 # scripts
 the scripts folder contains:
