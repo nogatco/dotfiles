@@ -8,6 +8,9 @@ alias yt-dl-cm-s="youtube-dl -x --audio-format best --audio-quality 0 -i --add-m
 alias fucking="sudo "
 eval $(thefuck --alias fuck)
 
+alias vim=nvim
+alias music='systemctl start mpd --user;ncmpcpp'
+
 alias wlan-up="sudo ip link set wlo1 up"
 alias wlan-down="sudo ip link set wlo1 down"
 

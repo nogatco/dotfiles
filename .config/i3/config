@@ -31,6 +31,7 @@ floating_modifier $mod
 
 
 #Starting programs
+exec --no-startup-id ~/scripts/launch-applications.sh
 exec_always --no-startup-id	"pkill -f \"autoname_workspace.py\";~/scripts/autoname_workspaces.py"
 exec_always --no-startup-id	~/scripts/polybar-launcher.sh
 exec_always --no-startup-id	~/scripts/autoname_workspaces.py
