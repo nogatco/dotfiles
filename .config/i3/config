@@ -153,3 +153,7 @@ bindsym $mod+y       gaps inner current minus 6
 bindsym $mod+u       gaps inner current plus 6
 bindsym $mod+Shift+y gaps outer current minus 6
 bindsym $mod+Shift+u gaps outer current plus 6
+
+# screen lock
+
+bindsym $mod+x	exec ~/scripts/scrlock.sh

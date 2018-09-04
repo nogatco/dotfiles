@@ -20,6 +20,7 @@ The goal of this rice is for it to be completely controlled by pywal, so that ad
 - ranger
 - ncmpcpp
 - cava
+- i3lock-fancy
 
 ## Install
 0. Install an arch install with a non-root user and the tools above
@@ -37,6 +38,7 @@ The color sheme is completely controlled by pywal, so:
 the scripts folder contains:
 - a modified version of autoname_workspaces.py
 - a polybar launcher
+- a screen lock script
 
 # Quirks/Bugs
 - The MPD module for polybar doesn't display `format-online-prefix`. I have made an issue for that.
