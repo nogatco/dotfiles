@@ -9,7 +9,7 @@ The goal of this rice is for it to be completely controlled by pywal, so that ad
 ## Programs & Tools Used
 - i3-gaps:xorg@Arch Linux
 - polybar
-- urxvt
+- xterm(As it can handle true color while urxvt can't properly)
 - mpd
 - pywal
 - spacemacs
@@ -40,8 +40,6 @@ the scripts folder contains:
 - a polybar launcher
 - a screen lock script
 
-# Quirks/Bugs
-- The MPD module for polybar doesn't display `format-online-prefix`. I have made an issue for that.
 
 # Todo
 - spacemacs

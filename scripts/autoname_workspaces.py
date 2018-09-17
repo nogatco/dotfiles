@@ -76,6 +76,7 @@ WINDOW_ICONS = {
     'xfce4-terminal': fa.icons['terminal'],
     'zenity': fa.icons['window-maximize'],
     'emacs': fa.icons['code'],
+    'jetbrains-pycharm-ce': fa.icons['python']
 }
 
 # This icon is used for any application not in the list above
