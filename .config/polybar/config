@@ -19,6 +19,78 @@ modules-right = seperator vol seperator cpu seperator mem seperator bat seperato
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
+# --- For my 3-monitor PC
+
+[bar/barl]
+;monitor="HDMI-0"
+width = 100%
+height = 16
+
+background = ${env:bg_a}
+foreground = ${env:fg_a}
+
+font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
+
+padding-top = 4
+
+#modules
+modules-left = pointright
+modules-center = i3 seperator xwindow
+modules-right = pointleft
+
+;wm-restack = i3
+;override-redirect = true
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+
+[bar/barc]
+;monitor="DVI-D-0"
+width = 100%
+height = 16
+
+background = ${env:bg_a}
+foreground = ${env:fg_a}
+
+font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
+
+padding-top = 4
+
+#modules
+modules-left = pointright
+modules-center = i3 seperator xwindow
+modules-right = pointleft
+
+;wm-restack = i3
+;override-redirect = true
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+
+
+[bar/barr]
+;monitor="DP-0"
+width = 100%
+height = 16
+
+background = ${env:bg_a}
+foreground = ${env:fg_a}
+
+font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
+
+padding-top = 4
+
+#modules
+modules-left = pointright i3 seperator ethpc seperator
+modules-center = xwindow seperator music
+modules-right = seperator vol seperator cpu seperator mem seperator clock pointleft
+
+;wm-restack = i3
+;override-redirect = true
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+
 
 [module/xwindow]
 type = internal/xwindow
@@ -50,13 +122,13 @@ content = " "
 [module/i3]
 type = internal/i3
 strip-wsnumbers = true
-
+pin-workspaces = true
 format = <label-state> <label-mode>
 
 label-separator = |
 label-separator-padding = 1
 label-separator-foreground = ${env:sep_a}
-label-focused =  %name%
+label-focused =  %index%
 label-unfocused = %index%: %name%
 
 [module/eth]
@@ -69,6 +141,19 @@ label-connected = "%local_ip%"
 label-disconnected = "down"
 format-disconnected-prefix = "ETH: "
 format-disconnected-prefix-foreground = ${env:fg_prefix_a}
+
+
+[module/ethpc]
+type = internal/network
+interface = enp3s0
+interval = 3.0
+format-connected-prefix = "ETH: "
+format-connected-prefix-foreground = ${env:fg_prefix_a}
+label-connected = "%local_ip%"
+label-disconnected = "down"
+format-disconnected-prefix = "ETH: "
+format-disconnected-prefix-foreground = ${env:fg_prefix_a}
+
 
 
 [module/wlan]
