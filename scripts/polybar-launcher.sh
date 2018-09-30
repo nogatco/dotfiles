@@ -39,10 +39,9 @@ export bar_secondary_a="#CC${color3/'#'}"
 
 # Launch bars depending on which machine I'm on
 
-if [ "$(hostname)" = "PCARCH" ]; then 
-	MONITOR="HDMI-0" polybar barl -l trace&
-	MONITOR="DP-0" polybar barc -l trace&
-	MONITOR="DVI-D-0" polybar barr -l trace&
+if [ "$(hostname)" = "archpc" ]; then 
+	polybar barl &
+	polybar barr &
 else
 	polybar bar0
 fi

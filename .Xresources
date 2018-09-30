@@ -1,4 +1,4 @@
-*.font: xft:Hack\ Nerd\ Font\ Mono:antialias=true:hinting=true:style=Regular:size=11
+*.font:  Hack Nerd Font Mono:antialias=true:hinting=true:style=Regular:size=11
 rofi.font: Hack Nerd Font Mono 11
 Emacs.Font: Hack Nerd Font Mono 11
 
@@ -7,6 +7,14 @@ Xft.antialias:	1
 Xft.autohint:	1
 Xft.hinting:	1
 
+URxvt*font: xft:Hack Nerd Font Mono:pixelsize=11:style=Regular:antialias=true:hinting=true
+URxvt*boldFont: xft:Hack Nerd Font Mono:pixelsize=11:style=Bold:antialias=true:hinting=true
+URxvt*italicFont: xft:Hack Nerd Font Mono:pixelsize=11:style=Italic:antialias=true:hinting=true
+URxvt*boldItalicont: xft:Hack Nerd Font Mono:pixelsize=11:style=Bold Italic:antialias=true:hinting=true
+
+!URxvt.BoldFont: xft:Hack\ Nerd\ Font\ Mono:antialias=true:hinting=true:style=Bold:pixelsize=11
+!URxvt.ItalicFont: xft:Hack\ Nerd\ Font\ Mono:antialias=true:hinting=true:style=Italic:pixelsize=11
+!URxvt.BoldItalicFont: xft:Hack\ Nerd\ Font\ Mono:antialias=true:hinting=true:style=Bold\ Italic:pixelsize=11
 
 URxvt*termName:                 rxvt-256color
 URxvt.depth:                    32
