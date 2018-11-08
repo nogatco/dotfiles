@@ -42,7 +42,7 @@ fi
 
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/nemesis/.oh-my-zsh"
+  export ZSH="/home/li/.oh-my-zsh"
 
 # Import colorscheme from 'wal' asynchronously
 # &   # Run the process in the background.

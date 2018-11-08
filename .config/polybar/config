@@ -7,7 +7,6 @@ foreground = ${env:fg_a}
 
 font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
 
-padding-top = 4
 
 #modules
 modules-left = pointright i3 seperator wlan seperator eth seperator
@@ -31,7 +30,6 @@ foreground = ${env:fg_a}
 
 font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
 
-padding-top = 4
 
 #modules
 modules-left = pointright i3 seperator ethpc seperator
@@ -53,7 +51,6 @@ foreground = ${env:fg_a}
 
 font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
 
-padding-top = 4
 
 #modules
 modules-left = pointright i3 seperator ethpc seperator
