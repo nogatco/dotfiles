@@ -15,6 +15,8 @@ alias music='systemctl start mpd --user;ncmpcpp'
 alias wlan-up="sudo ip link set wlo1 up"
 alias wlan-down="sudo ip link set wlo1 down"
 
+alias l='ls -lah'
+
 #START SSH-AGENT on startup, so you only need to ssh-add if you want to use your ssh-key
 SSH_ENV="$HOME/.ssh/environment"
 

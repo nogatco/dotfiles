@@ -1,4 +1,4 @@
-*.font:  Hack Nerd Font Mono:antialias=true:hinting=true:style=Regular:size=11
+*.font:  Hack Nerd Font Mono:antialias=true:hinting=true:style=Regular:pixelsize=11
 rofi.font: Hack Nerd Font Mono 11
 Emacs.Font: Hack Nerd Font Mono 11
 
