@@ -7,7 +7,7 @@
 alias yt-dl-song="youtube-dl -x --audio-format best --audio-quality 0 -i --add-metadata --metadata-from-title \"'(?P<artist>.+?)\s*-\s*(?P<title>.+?)-.*'\" "
 alias yt-dl-cm-s="youtube-dl -x --audio-format best --audio-quality 0 -i --add-metadata --metadata-from-title"
 alias fucking="sudo "
-eval $(thefuck --alias fuck)
+#eval $(thefuck --alias)
 
 alias vim=nvim
 alias music='systemctl start mpd --user;ncmpcpp'
@@ -42,7 +42,7 @@ fi
 
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/nemesis/.oh-my-zsh"
+  export ZSH="/home/be/.oh-my-zsh"
 
 # Import colorscheme from 'wal' asynchronously
 # &   # Run the process in the background.
