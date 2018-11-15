@@ -7,7 +7,7 @@
 alias yt-dl-song="youtube-dl -x --audio-format best --audio-quality 0 -i --add-metadata --metadata-from-title \"'(?P<artist>.+?)\s*-\s*(?P<title>.+?)-.*'\" "
 alias yt-dl-cm-s="youtube-dl -x --audio-format best --audio-quality 0 -i --add-metadata --metadata-from-title"
 alias fucking="sudo "
-eval $(thefuck --alias fuck)
+#eval $(thefuck --alias)
 
 alias vim=nvim
 alias music='systemctl start mpd --user;ncmpcpp'
