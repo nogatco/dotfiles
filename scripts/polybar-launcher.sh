@@ -39,7 +39,7 @@ export bar_secondary_a="#CC${color3/'#'}"
 
 # Launch bars depending on which machine I'm on
 
-if [ "$(hostname)" = "beryllium" ]; then 
+if [ "$(hostname -s)" = "beryllium" ]; then 
 	polybar barl &
 	polybar barr &
 else
