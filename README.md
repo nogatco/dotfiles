@@ -9,7 +9,7 @@ The goal of this rice is for it to be completely controlled by pywal, so that ad
 ## Programs & Tools Used
 - i3-gaps:xorg@Arch Linux
 - polybar
-- xterm(As it can handle true color while urxvt can't properly)
+- my [st build](https://github.com/x-zvf/st)
 - mpd
 - pywal
 - spacemacs

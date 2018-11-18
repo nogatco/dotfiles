@@ -39,7 +39,7 @@ exec_always --no-startup-id wal -R
 exec_always --no-startup-id compton
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec st 
 
 # kill focused window
 bindsym $mod+Shift+q kill
