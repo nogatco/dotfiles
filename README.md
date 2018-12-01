@@ -2,9 +2,6 @@
 
 #### You can find the old pywal based rice in the _rice-v1_ branch
 
-![Screenshot0](scrots/scrot0.png)
-![Screenshot1](scrots/scrot1.png)
-
 ## Programs & Tools Used
 - i3-gaps:xorg@Arch Linux
 - polybar
@@ -23,7 +20,6 @@
 ## Install
 0. Install an arch install with a non-root user and the tools above
 1. Copy the dotfiles. (Paths in the repo are relative to ~/)
-2. set the theme
 
 # scripts
 the scripts folder contains:
@@ -31,6 +27,8 @@ the scripts folder contains:
 - a polybar launcher
 - a screen lock script
 
+# Wallpaper
+bg.png - Solarized Mountains by Thefan Sunjaya from Simple Desktops. The original link no longer exists, but [here](http://i.imgur.com/JKDsRHa.png)'s an imgur link.
 
 # Todo
 - spacemacs
