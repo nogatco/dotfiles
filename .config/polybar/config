@@ -68,12 +68,11 @@ scroll-down = i3wm-wsprev
 type = internal/xwindow
 label = %title:0:50:...%
 
-
 [module/cpu]
 type = internal/cpu
 interval = 1
 format-prefix = CPU: 
-format-prefix-foreground=${env:fg_prefix_a}
+format-prefix-foreground=${env:cpu_prefix_a}
 label = %percentage:2%%
 
 [module/seperator]
@@ -93,26 +92,33 @@ content = " "
 
 [module/i3]
 type = internal/i3
-strip-wsnumbers = true
+strip-wsnumbers = false
 pin-workspaces = true
 format = <label-state> <label-mode>
 
 label-separator = |
 label-separator-padding = 1
-label-separator-foreground = ${env:sep_a}
-label-focused =  %index%
-label-unfocused = %index%: %name%
+label-separator-foreground = ${env:i3_a}
+label-mode = | [%mode%]
+label-mode-foreground = ${env:i3_a}
+label-focused =  current: %name%
+label-focused-foreground = ${env:active_prefix_a}
+label-unfocused-foreground = ${env:inactive_prefix_a}
+label-unfocused = %name%
+label-visible-foreground = ${env:inactive_prefix_a}
+label-visible = %name%
+
 
 [module/eth]
 type = internal/network
 interface = enp0s25
 interval = 3.0
 format-connected-prefix = "ETH: "
-format-connected-prefix-foreground = ${env:fg_prefix_a}
+format-connected-prefix-foreground = ${env:inet_prefix_a}
 label-connected = "%local_ip%"
 label-disconnected = "down"
 format-disconnected-prefix = "ETH: "
-format-disconnected-prefix-foreground = ${env:fg_prefix_a}
+format-disconnected-prefix-foreground = ${env:inactive_prefix_a}
 
 
 [module/ethpc]
@@ -120,11 +126,11 @@ type = internal/network
 interface = enp3s0
 interval = 3.0
 format-connected-prefix = "ETH: "
-format-connected-prefix-foreground = ${env:fg_prefix_a}
+format-connected-prefix-foreground = ${env:inet_prefix_a}
 label-connected = "%local_ip%"
 label-disconnected = "down"
 format-disconnected-prefix = "ETH: "
-format-disconnected-prefix-foreground = ${env:fg_prefix_a}
+format-disconnected-prefix-foreground = ${env:inactive_prefix_a}
 
 
 
@@ -133,10 +139,10 @@ type = internal/network
 interface = wlo1
 interval = 3.0
 format-connected-prefix = "WLN: "
-format-connected-prefix-foreground = ${env:fg_prefix_a}
+format-connected-prefix-foreground = ${env:inet_prefix_a}
 label-connected = "%local_ip%"
 format-disconnected-prefix = "WLN: "
-format-disconnected-prefix-foreground = ${env:fg_prefix_a}
+format-disconnected-prefix-foreground = ${env:inactive_prefix_a}
 label-disconnected = "down"
 
 
@@ -144,7 +150,7 @@ label-disconnected = "down"
 type = internal/memory
 interval = 2
 format-prefix = "MEM: "
-format-prefix-foreground=${env:fg_prefix_a}
+format-prefix-foreground=${env:mem_prefix_a}
 label = %percentage_used%%
 
 [module/clock]
@@ -153,6 +159,7 @@ interval = 1
 date = "%Y.%m.%d %a"
 time = "%H:%M:%S"
 label = %date% %time%
+label-foreground = ${env:time_a}
 
 [module/vol]
 type = internal/alsa
@@ -166,10 +173,17 @@ master-soundcard = default
 
 interval = 1
 format-volume-prefix = "VOL: "
-format-volume-prefix-foreground=${env:fg_prefix_a}
+format-volume-prefix-foreground=${env:vol_prefix_a}
+format-muted-prefix = "VOL: "
+format-muted-prefix-foreground=${env:vol_prefix_a}
+
 
 format-volume = "<label-volume> <bar-volume>"
+format-muted = "<label-muted>"
 label-muted = "muted"
+label-muted-foreground=${env:inactive_prefix_a}
+
+label-volume-foreground = ${env:active_prefix_a}
 
 bar-volume-width = 10
 bar-volume-fill = =
@@ -184,15 +198,17 @@ type = internal/mpd
 host = 127.0.0.1
 format-online = "<label-song> @ <label-time> <bar-progress>"
 format-offline = "offline"
+format-offline-foreground=${env:inactive_prefix_a}
 
 format-online-prefix = "MPD: "
-format-online-prefix-foreground=${env:fg_prefix_a}
+format-online-prefix-foreground=${env:mpd_prefix_a}
 format-offline-prefix = "MPD: "
-format-offline-prefix-foreground=${env:fg_prefix_a}
+format-offline-prefix-foreground=${env:mpd_prefix_a}
 
 label-song = %artist% - %title%
 label-song-maxlen = 50 
 label-song-ellipsis = true
+
 
 bar-progress-width = 15
 bar-progress-fill = =
@@ -210,13 +226,15 @@ adapter = AC
 battery = BAT0
 
 format-charging-prefix = "CRG: "
-format-charging-prefix-foreground=${env:fg_prefix_a}
+format-charging-prefix-foreground=${env:bat_prefix_a}
 format-charging = "<label-charging>"
 label-charging = "%percentage%"
+label-charging-foreground = ${env:active_prefix_a}
 
 format-discharging-prefix = "DIS: "
-format-discharging-prefix-foreground=${env:fg_prefix_a}
+format-discharging-prefix-foreground=${env:bat_prefix_a}
 format-discharging = "<label-discharging>"
 label-discharging = "%percentage%"
+label-discharging-foreground = ${env:bat_prefix_a}
 
 

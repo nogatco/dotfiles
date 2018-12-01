@@ -1,17 +1,15 @@
-# Octalgon's Dotfiles
+# XZVF's Dotfiles Version 2
+
+#### You can find the old pywal based rice in the _rice-v1_ branch
 
 ![Screenshot0](scrots/scrot0.png)
 ![Screenshot1](scrots/scrot1.png)
-
-## Goal
-The goal of this rice is for it to be completely controlled by pywal, so that adjusting the theme is just a single command away.
 
 ## Programs & Tools Used
 - i3-gaps:xorg@Arch Linux
 - polybar
 - my [st build](https://github.com/x-zvf/st)
 - mpd
-- pywal
 - spacemacs
 - nvim
 - powerlevel9k:oh-my-zsh@zsh
@@ -26,13 +24,6 @@ The goal of this rice is for it to be completely controlled by pywal, so that ad
 0. Install an arch install with a non-root user and the tools above
 1. Copy the dotfiles. (Paths in the repo are relative to ~/)
 2. set the theme
-
-## change/set theme
-The color sheme is completely controlled by pywal, so:
-
-0. Open ranger
-1. Select the new image
-2. Press `bg`
 
 # scripts
 the scripts folder contains:

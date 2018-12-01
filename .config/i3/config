@@ -35,8 +35,8 @@ exec --no-startup-id ~/scripts/launch-applications.sh
 exec_always --no-startup-id	"pkill -f \"autoname_workspace.py\";~/scripts/autoname_workspaces.py"
 exec_always --no-startup-id	~/scripts/polybar-launcher.sh
 exec_always --no-startup-id	~/scripts/autoname_workspaces.py
-exec_always --no-startup-id wal -R
 exec_always --no-startup-id compton
+exec_always --no-startup-id feh --bg-scale bg.png 
 
 # start a terminal
 bindsym $mod+Return exec st 
@@ -144,7 +144,7 @@ bindsym $mod+r mode "resize"
 #border none
 for_window [class="^.*"] border pixel 0
 # Gaps
-gaps inner 5
+gaps inner 0
 gaps outer 0
 smart_borders on
 smart_gaps on
