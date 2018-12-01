@@ -2,6 +2,10 @@
 
 #### You can find the old pywal based rice in the _rice-v1_ branch
 
+![Screenshot 1](scrots/v2-scrot1.png)
+![Screenshot 2](scrots/v2-scrot2.png)
+
+
 ## Programs & Tools Used
 - i3-gaps:xorg@Arch Linux
 - polybar
