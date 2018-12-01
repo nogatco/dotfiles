@@ -1,4 +1,6 @@
-# Octalgon's Dotfiles
+# XZVF's dotfiles version 1
+
+#### This is, for now the final version of this rice. I'm currently redoing my rice on the _master_ branch.
 
 ![Screenshot0](scrots/scrot0.png)
 ![Screenshot1](scrots/scrot1.png)
@@ -49,3 +51,4 @@ the scripts folder contains:
 - add some comments
 
 ## HAPPY RICING!
+
