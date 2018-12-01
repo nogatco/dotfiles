@@ -118,8 +118,8 @@ format-connected-prefix-foreground = ${env:inet_prefix_a}
 label-connected = "%local_ip%"
 label-disconnected = "down"
 format-disconnected-prefix = "ETH: "
-format-disconnected-prefix-foreground = ${env:inactive_prefix_a}
-
+format-disconnected-prefix-foreground = ${env:inet_prefix_a}
+label-disconnected-foreground = ${env:inactive_prefix_a}
 
 [module/ethpc]
 type = internal/network
@@ -130,7 +130,8 @@ format-connected-prefix-foreground = ${env:inet_prefix_a}
 label-connected = "%local_ip%"
 label-disconnected = "down"
 format-disconnected-prefix = "ETH: "
-format-disconnected-prefix-foreground = ${env:inactive_prefix_a}
+format-disconnected-prefix-foreground = ${env:inet_prefix_a}
+label-disconnected-foreground = ${env:inactive_prefix_a}
 
 
 
@@ -142,9 +143,9 @@ format-connected-prefix = "WLN: "
 format-connected-prefix-foreground = ${env:inet_prefix_a}
 label-connected = "%local_ip%"
 format-disconnected-prefix = "WLN: "
-format-disconnected-prefix-foreground = ${env:inactive_prefix_a}
+format-disconnected-prefix-foreground = ${env:inet_prefix_a}
 label-disconnected = "down"
-
+label-disconnected-foreground = ${env:inactive_prefix_a}
 
 [module/mem]
 type = internal/memory
