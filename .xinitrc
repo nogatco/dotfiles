@@ -5,4 +5,4 @@ setxkbmap de
 xmodmap ~/.Xmodmap
 xbindkeys &
 xunclutter -grab &
-exec i3
+exec i3 --shmlog-size=26214400

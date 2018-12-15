@@ -2,7 +2,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-
 #ALIASES
 alias yt-dl-song="youtube-dl -x --audio-format best --audio-quality 0 -i --add-metadata --metadata-from-title \"'(?P<artist>.+?)\s*-\s*(?P<title>.+?)-.*'\" "
 alias yt-dl-cm-s="youtube-dl -x --audio-format best --audio-quality 0 -i --add-metadata --metadata-from-title"
@@ -16,6 +15,7 @@ alias wlan-up="sudo ip link set wlo1 up"
 alias wlan-down="sudo ip link set wlo1 down"
 
 alias l='ls -lah'
+
 
 #START SSH-AGENT on startup, so you only need to ssh-add if you want to use your ssh-key
 SSH_ENV="$HOME/.ssh/environment"
@@ -44,7 +44,7 @@ fi
 
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/be/.oh-my-zsh"
+  export ZSH="/home/li/.oh-my-zsh"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -139,4 +139,6 @@ source $ZSH/oh-my-zsh.sh
 
 # make xterm transparent&add 256color flag
 [ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
+
+bindkey -v
 
