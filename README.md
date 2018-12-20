@@ -1,7 +1,11 @@
 # XZVF's Dotfiles Version 2
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #### You can find the old pywal based rice in the _rice-v1_ branch
+=======
+#### The older rices can be found in _rice-v1_ and _v2_ respectively
+>>>>>>> Stashed changes
 =======
 #### The older rices can be found in _rice-v1_ and _v2_ respectively
 >>>>>>> Stashed changes
