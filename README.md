@@ -1,6 +1,7 @@
 # XZVF's Dotfiles Version 2
 
-#### You can find the old pywal based rice in the _rice-v1_ branch
+#### The current version can be found on master.
+#### You can find the even older pywal based rice in the _rice-v1_ branch
 
 ![Screenshot 1](scrots/v2-scrot1.png)
 ![Screenshot 2](scrots/v2-scrot2.png)
