@@ -36,7 +36,7 @@ exec_always --no-startup-id	"pkill -f \"autoname_workspace.py\";~/scripts/autona
 exec_always --no-startup-id	~/scripts/polybar-launcher.sh
 exec_always --no-startup-id	~/scripts/autoname_workspaces.py
 #exec_always --no-startup-id compton
-exec_always --no-startup-id feh --bg-scale bg.png 
+exec_always --no-startup-id feh --bg-scale ~/Wal/bg-solarized.png 
 
 # start a terminal
 bindsym $mod+Return exec st 

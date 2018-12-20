@@ -1,6 +1,10 @@
 # XZVF's Dotfiles Version 2
 
+<<<<<<< Updated upstream
 #### You can find the old pywal based rice in the _rice-v1_ branch
+=======
+#### The older rices can be found in _rice-v1_ and _v2_ respectively
+>>>>>>> Stashed changes
 
 ![Screenshot 1](scrots/v2-scrot1.png)
 ![Screenshot 2](scrots/v2-scrot2.png)
@@ -32,7 +36,7 @@ the scripts folder contains:
 - a screen lock script
 
 # Wallpaper
-bg.png - Solarized Mountains by Thefan Sunjaya from Simple Desktops. The original link no longer exists, but [here](http://i.imgur.com/JKDsRHa.png)'s an imgur link.
+Wal/bg-solarized.png - Solarized Mountains by Thefan Sunjaya from Simple Desktops. The original link no longer exists, but [here](http://i.imgur.com/JKDsRHa.png)'s an imgur link.
 
 # Todo
 - spacemacs
