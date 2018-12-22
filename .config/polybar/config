@@ -9,9 +9,9 @@ font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
 
 
 #modules
-modules-left = pointright i3 seperator wlan seperator eth seperator
-modules-center = xwindow seperator music
-modules-right = seperator vol seperator cpu seperator mem seperator bat seperator clock pointleft
+modules-left = sL i3 sR sL wlan sR sL eth sR
+modules-center = sL xwindow sR sL music sR
+modules-right = sL vol sR sL cpu sR sL mem sR sL bat sR sL clock sR
 
 ;wm-restack = i3
 ;override-redirect = true
@@ -32,9 +32,9 @@ font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
 
 
 #modules
-modules-left = pointright i3 seperator ethpc seperator
-modules-center = xwindow seperator music
-modules-right = seperator vol seperator cpu seperator mem seperator clock pointleft
+modules-left = sL i3 sR sL ethpc sR
+modules-center = sL xwindow sR sL music sR
+modules-right = sL vol sR sL cpu sR sL mem sR sL clock sR
 
 ;wm-restack = i3
 ;override-redirect = true
@@ -53,9 +53,9 @@ font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
 
 
 #modules
-modules-left = pointright i3 seperator ethpc seperator
-modules-center = xwindow seperator music
-modules-right = seperator vol seperator cpu seperator mem seperator clock pointleft
+modules-left = sL i3 sR sL ethpc sR
+modules-center = sL xwindow sR sL music sR
+modules-right = sL vol sR sL cpu sR sL mem sR sL clock sR
 
 ;wm-restack = i3
 ;override-redirect = true
@@ -75,20 +75,15 @@ format-prefix = CPU:
 format-prefix-foreground=${env:cpu_prefix_a}
 label = %percentage:2%%
 
-[module/seperator]
+[module/sR]
 type = custom/text
 content-foreground = ${env:sep_a}
-content = "  "
-
-[module/pointleft]
-content-foreground = ${env:sep_a}
-type = custom/text
-content = " "
-
-[module/pointright]
-content-foreground = ${env:sep_a}
-type = custom/text
 content = " "
+
+[module/sL]
+type = custom/text
+content-foreground = ${env:sep_a}
+content = " "
 
 [module/i3]
 type = internal/i3
