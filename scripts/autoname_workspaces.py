@@ -78,7 +78,7 @@ WINDOW_ICONS = {
     'zenity': fa.icons['window-maximize'],
     'emacs': fa.icons['code'],
     'jetbrains-*': fa.icons['code'],
-    'xterm': fa.icons['terminal']
+    'st': fa.icons['terminal']
 }
 
 # This icon is used for any application not in the list above

@@ -5,7 +5,7 @@
 #ALIASES
 alias yt-dl-song="youtube-dl -x --audio-format best --audio-quality 0 -i --add-metadata --metadata-from-title \"'(?P<artist>.+?)\s*-\s*(?P<title>.+?)-.*'\" "
 alias yt-dl-cm-s="youtube-dl -x --audio-format best --audio-quality 0 -i --add-metadata --metadata-from-title"
-alias fucking="sudo "
+alias fucking="sudo !!"
 #eval $(thefuck --alias)
 
 alias vim=nvim
@@ -140,5 +140,7 @@ source $ZSH/oh-my-zsh.sh
 # make xterm transparent&add 256color flag
 [ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 
-bindkey -v
+#bindkey -v
 
+export EDITOR='nvim'
+export VISUAL='nvim'

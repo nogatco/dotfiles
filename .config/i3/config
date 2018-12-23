@@ -147,9 +147,9 @@ bindsym $mod+r mode "resize"
 for_window [class="^.*"] border pixel 0
 # Gaps
 gaps inner 5
-gaps outer 5
+gaps outer 0
 #smart_borders on
-smart_gaps on
+smart_gaps off
 
 bindsym $mod+y       gaps inner current minus 5
 bindsym $mod+u       gaps inner current plus 5
