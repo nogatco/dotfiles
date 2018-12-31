@@ -1,9 +1,10 @@
-# XZVF's Dotfiles Version 2
+# XZVF's Dotfiles Version 3
 
 #### The older rices can be found in _rice-v1_ and _v2_ respectively
 
+_(old screenshots, new ones will be added shortly)
 ![Screenshot 1](scrots/v2-scrot1.png)
-![Screenshot 2](scrots/v2-scrot2.png)
+![Screenshot 2](srcots/v2-scrot2.png)
 
 
 ## Programs & Tools Used
