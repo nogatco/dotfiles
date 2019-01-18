@@ -149,7 +149,7 @@ for_window [class="^.*"] border pixel 0
 gaps inner 5
 gaps outer 0
 #smart_borders on
-smart_gaps off
+#smart_gaps on
 
 bindsym $mod+y       gaps inner current minus 5
 bindsym $mod+u       gaps inner current plus 5

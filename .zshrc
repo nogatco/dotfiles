@@ -8,7 +8,7 @@ alias yt-dl-cm-s="youtube-dl -x --audio-format best --audio-quality 0 -i --add-m
 alias fucking="sudo !!"
 #eval $(thefuck --alias)
 
-alias vim=nvim
+alias v=nvim
 alias music='systemctl start mpd --user;ncmpcpp'
 
 alias wlan-up="sudo ip link set wlo1 up"
@@ -16,6 +16,10 @@ alias wlan-down="sudo ip link set wlo1 down"
 
 alias l='ls -lah'
 
+alias gu="git add -u; git commit -m "
+
+# FOR Tmux
+export TERM="st-256color"
 
 #START SSH-AGENT on startup, so you only need to ssh-add if you want to use your ssh-key
 SSH_ENV="$HOME/.ssh/environment"
