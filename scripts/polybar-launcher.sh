@@ -52,5 +52,6 @@ if [ "$(hostname -s)" = "beryllium" ]; then
 	polybar barl &
 	polybar barr &
 else
-	polybar bar0 -l trace
+	polybar bar0 &
+	if [[ "$(xrandr)" =~ "DP-3 con" ]]; then polybar bar1 & fi
 fi

@@ -146,5 +146,5 @@ source $ZSH/oh-my-zsh.sh
 
 #bindkey -v
 
-export EDITOR='nvim'
-export VISUAL='nvim'
+export EDITOR='vim'
+export VISUAL='vim'
