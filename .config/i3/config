@@ -37,6 +37,7 @@ exec_always --no-startup-id	~/scripts/polybar-launcher.sh
 exec_always --no-startup-id	~/scripts/autoname_workspaces.py
 exec_always --no-startup-id compton
 exec_always --no-startup-id wal -R
+exec_always --no-startup-id "killall dunst; dunst"
 
 # start a terminal
 bindsym $mod+Return exec st
@@ -160,5 +161,7 @@ bindsym $mod+Shift+u gaps outer current plus 5
 new_window none
 default_border pixel 0
 # screen lock
-
 bindsym $mod+x	exec ~/scripts/scrlock.sh
+
+# Show password script
+bindsym $mod+Shift+p exec "~/scripts/pass_show.sh"

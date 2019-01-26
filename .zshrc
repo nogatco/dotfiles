@@ -21,6 +21,8 @@ alias gu="git add -u; git commit -m "
 # FOR Tmux
 export TERM="st-256color"
 
+export BROWSER="/usr/bin/firefox"
+
 #START SSH-AGENT on startup, so you only need to ssh-add if you want to use your ssh-key
 SSH_ENV="$HOME/.ssh/environment"
 
