@@ -8,7 +8,7 @@ Xft.autohint:	1
 Xft.hinting:	1
 
 !st.alpha: 100
-*.alpha: 0
+!*.alpha: 0
 
 ! I no longer use URxvt
 
