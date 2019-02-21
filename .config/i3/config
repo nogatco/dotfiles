@@ -43,7 +43,7 @@ exec_always --no-startup-id "killall dunst; dunst"
 bindsym $mod+Return exec st
 
 # start a python shell
-bindsym $mod+Shift+Return exec st -e ~/scripts/al.sh py
+bindsym $mod+Shift+Return exec st -e python3
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -165,3 +165,9 @@ bindsym $mod+x	exec ~/scripts/scrlock.sh
 
 # Show password script
 bindsym $mod+Shift+p exec "~/scripts/pass_show.sh"
+
+# Launching Stuff
+bindsym $mod+Mod2+KP_7 workspace number 1; exec [ $(ps a | grep tmux | grep sys| wc -l) = 0 ] && st -e tmux new-session -A -s sys
+bindsym $mod+Mod2+KP_8 exec cd ~/projects; workspace number 2; exec [ $(ps a | grep tmux | grep dev| wc -l) = 0 ] && st -e tmux new-session -A -s dev
+bindsym $mod+Mod2+KP_9 workspace number 3; exec [ $(ps a | grep tmux | grep personal| wc -l) = 0 ] && st -e tmux new-session -A -s personal
+bindsym $mod+Mod2+KP_4 workspace number 4; exec [ $(ps a | grep firefox | wc -l) = 0 ] && firefox

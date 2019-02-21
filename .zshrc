@@ -25,6 +25,7 @@ export BROWSER="/usr/bin/firefox"
 
 alias tss="tmux new-session -A -s sys"
 alias tsp="tmux new-session -A -s personal"
+alias tsd="tmux new-session -A -s dev"
 
 #START SSH-AGENT on startup, so you only need to ssh-add if you want to use your ssh-key
 SSH_ENV="$HOME/.ssh/environment"
