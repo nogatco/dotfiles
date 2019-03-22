@@ -321,9 +321,21 @@ before packages are loaded. If you are unsure, you should try in setting them in
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration.
-This is the place where most of your configurations should be done. Unless it is
+This is the place where w most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+
+  (c-add-style "sane"
+               '((indent-tabs-mode . nil)
+                 (c-basic-offset . 4)
+                 (c-offsets-alist
+                  (substatement-open . 0)
+                  (inline-open . 0)
+                  (statement-cont . c-lineup-assignments)
+                  (inextern-lang . 0)
+                  (innamespace . 4))))
+
+  (push '(other . "sane") c-default-style)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

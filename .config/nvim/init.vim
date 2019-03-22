@@ -11,6 +11,9 @@ call plug#end()
 let g:airline_powerline_fonts = 1
 set colorcolumn=80,120
 
+
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+
 set termguicolors
 set background=dark
 colorscheme NeoSolarized
