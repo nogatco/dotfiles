@@ -17,7 +17,8 @@ alias wlan-down="sudo ip link set wlo1 down"
 alias l='ls -lah'
 
 alias gu="git add -u; git commit -m "
-
+#The. Best. Way. To. Commit.
+alias gy='git commit -am "`curl -s http://whatthecommit.com/index.txt`"'
 # FOR Tmux
 export TERM="st-256color"
 
