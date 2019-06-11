@@ -1,5 +1,6 @@
 xrandr --setprovideroutputsource NVIDIA-0
 xrandr --auto
+autorandr
 xrdb ~/.Xresources
 xmodmap ~/.Xmodmap
 xbindkeys &

@@ -28,6 +28,30 @@ alias tss="tmux new-session -A -s sys"
 alias tsp="tmux new-session -A -s personal"
 alias tsd="tmux new-session -A -s dev"
 
+cblatex(){
+    rm *.aux *.bbl *.bcf *.blg *.log *.run.xml *.toc
+    pdflatex "$1".tex
+    biber "$1"
+    pdflatex "$1".tex
+    pdflatex "$1".tex
+}
+bvl(){
+    pdflatex "$1".tex
+    biber "$1"
+    pdflatex "$1".tex
+    pdflatex "$1".tex
+    evince "$1".pdf
+}
+
+# FUCK MY SCHOOL'S PRINTER, seriously.
+topdfversion(){
+    gs -sDEVICE=pdfwrite -dCompatibilityLevel="$3" -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile="$2" "$1"
+}
+
+ftsp(){
+    topdfversion "$1" "$2" 1.5
+}
+
 #START SSH-AGENT on startup, so you only need to ssh-add if you want to use your ssh-key
 SSH_ENV="$HOME/.ssh/environment"
 
