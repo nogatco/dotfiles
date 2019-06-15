@@ -35,9 +35,10 @@ exec --no-startup-id ~/scripts/launch-applications.sh
 exec_always --no-startup-id	"pkill -f \"autoname_workspace.py\";~/scripts/autoname_workspaces.py"
 exec_always --no-startup-id	~/scripts/polybar-launcher.sh
 exec_always --no-startup-id	~/scripts/autoname_workspaces.py
-exec_always --no-startup-id compton
-exec_always --no-startup-id wal -R
+exec_always --no-startup-id "killall compton; compton -b"
+#exec_always --no-startup-id wal -R
 exec_always --no-startup-id "killall dunst; dunst"
+exec_always --no-startup-id feh --bg-scale ~/Wal/bg.jpg
 
 # start a terminal
 bindsym $mod+Return exec st

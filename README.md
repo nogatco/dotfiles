@@ -1,22 +1,16 @@
-# XZVF's Dotfiles Version 3
+# XZVF's Dotfiles
 
-#### The older rices can be found in _rice-v1_ and _v2_ respectively
-
-_(new screenshots will be added shortly)_
+![](scrots/s1.png)
 
 ## Programs & Tools Used
 - i3-gaps:xorg@Arch Linux
 - polybar
-- my [st build](https://github.com/x-zvf/st)
-- mpd
-- spacemacs
-- nvim
+- lukesmithxyz's [st build](https://github.com/lukesmithxyz/st) with the opacity tweaked
+- doom emacs
+- neovim
 - powerlevel9k:oh-my-zsh@zsh
-- arc theme
 - compton
 - ranger
-- ncmpcpp
-- cava
 - i3lock-fancy
 
 ## Install
@@ -28,15 +22,10 @@ the scripts folder contains:
 - a modified version of autoname_workspaces.py
 - a polybar launcher
 - a screen lock script
+- hotspot setup
+- and more
 
 # Wallpaper
-Wal/bg-solarized.png - Solarized Mountains by Thefan Sunjaya from Simple Desktops. The original link no longer exists, but [here](http://i.imgur.com/JKDsRHa.png)'s an imgur link.
-
-# Todo
-- spacemacs
-- nvim
-- ranger
-- a form of screen lock
-- add some comments
+[this one](https://i.redd.it/59bsn5hgnojy.jpg)
 
 ## HAPPY RICING!

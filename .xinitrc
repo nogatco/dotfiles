@@ -4,6 +4,17 @@ autorandr
 xrdb ~/.Xresources
 xmodmap ~/.Xmodmap
 xbindkeys &
-xunclutter -grab &
+unclutter &
 setxkbmap -option caps:escape de
-exec i3 --shmlog-size=26214400
+
+case $WM in
+    i3)
+        exec i3
+        ;;
+    dwm)
+        exec dwm
+        ;;
+    *)
+        exec i3
+        ;;
+esac

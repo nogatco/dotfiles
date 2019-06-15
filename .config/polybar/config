@@ -2,15 +2,15 @@
 width = 100%
 height = 16
 
-background = ${env:bg_a}
-foreground = ${env:fg_a}
+background = ${xrdb:n0}
+foreground = ${xrdb:n4}
 
 font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
 
 
 #modules
 modules-left = sL i3 sR sL wlan sR sL eth sR
-modules-center = sL xwindow sR sL music sR
+modules-center = sL xwindow sR
 modules-right = sL vol sR sL cpu sR sL mem sR sL bat sR sL clock sR
 
 ;wm-restack = i3
@@ -24,15 +24,15 @@ monitor = "DP-3"
 width = 100%
 height = 16
 
-background = ${env:bg_a}
-foreground = ${env:fg_a}
+background = ${xrdb:n0}
+foreground = ${xrdb:n4}
 
 font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
 
 
 #modules
 modules-left = sL i3 sR sL wlan sR sL eth sR
-modules-center = sL xwindow sR sL music sR
+modules-center = sL xwindow sR
 modules-right = sL vol sR sL cpu sR sL mem sR sL bat sR sL clock sR
 
 ;wm-restack = i3
@@ -46,15 +46,15 @@ monitor="DVI-I-1"
 width = 100%
 height = 16
 
-background = ${env:bg_a}
-foreground = ${env:fg_a}
+background = ${xrdb:n0}
+foreground = ${xrdb:n4}
 
 font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
 
 
 #modules
 modules-left = sL i3 sR sL ethpc sR
-modules-center = sL xwindow sR sL music sR
+modules-center = sL xwindow sR
 modules-right = sL vol sR sL cpu sR sL mem sR sL clock sR
 
 ;wm-restack = i3
@@ -67,15 +67,16 @@ scroll-down = i3wm-wsprev
 width = 100%
 height = 16
 
-background = ${env:bg_a}
-foreground = ${env:fg_a}
+
+background = ${xrdb:n0}
+foreground = ${xrdb:n4}
 
 font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
 
 
 #modules
 modules-left = sL i3 sR sL ethpc sR
-modules-center = sL xwindow sR sL music sR
+modules-center = sL xwindow sR
 modules-right = sL vol sR sL cpu sR sL mem sR sL clock sR
 
 ;wm-restack = i3
@@ -88,22 +89,23 @@ scroll-down = i3wm-wsprev
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:50:...%
+label-foreground = ${xrdb:n10}
 
 [module/cpu]
 type = internal/cpu
 interval = 1
 format-prefix = CPU: 
-format-prefix-foreground=${env:cpu_prefix_a}
+format-prefix-foreground=${xrdb:n8}
 label = %percentage:2%%
 
 [module/sR]
 type = custom/text
-content-foreground = ${env:sep_a}
+content-foreground = ${xrdb:n3}
 content = " "
 
 [module/sL]
 type = custom/text
-content-foreground = ${env:sep_a}
+content-foreground = ${xrdb:n3}
 content = " "
 
 [module/i3]
@@ -114,14 +116,14 @@ format = <label-state> <label-mode>
 
 label-separator = |
 label-separator-padding = 1
-label-separator-foreground = ${env:i3_a}
+label-separator-foreground = ${xrdb:n2}
 label-mode = | [%mode%]
-label-mode-foreground = ${env:i3_a}
+label-mode-foreground = ${xrdb:n5}
 label-focused =  current: %name%
-label-focused-foreground = ${env:active_prefix_a}
-label-unfocused-foreground = ${env:inactive_prefix_a}
+label-focused-foreground = ${xrdb:n7}
+label-unfocused-foreground = ${xrdb:n3}
 label-unfocused = %name%
-label-visible-foreground = ${env:inactive_prefix_a}
+label-visible-foreground = ${xrdb:n5}
 label-visible = %name%
 
 
@@ -130,24 +132,26 @@ type = internal/network
 interface = enp0s25
 interval = 3.0
 format-connected-prefix = "ETH: "
-format-connected-prefix-foreground = ${env:inet_prefix_a}
+format-connected-prefix-foreground = ${xrdb:n8}
 label-connected = "%local_ip%"
 label-disconnected = "down"
 format-disconnected-prefix = "ETH: "
-format-disconnected-prefix-foreground = ${env:inet_prefix_a}
-label-disconnected-foreground = ${env:inactive_prefix_a}
+format-disconnected-prefix-foreground = ${xrdb:n8}
+label-disconnected-foreground = ${xrdb:n11}
+label-connected-foreground = ${xrdb:n14}
 
 [module/ethpc]
 type = internal/network
 interface = enp3s0
 interval = 3.0
 format-connected-prefix = "ETH: "
-format-connected-prefix-foreground = ${env:inet_prefix_a}
+format-connected-prefix-foreground = ${xrdb:n8}
 label-connected = "%local_ip%"
 label-disconnected = "down"
 format-disconnected-prefix = "ETH: "
-format-disconnected-prefix-foreground = ${env:inet_prefix_a}
-label-disconnected-foreground = ${env:inactive_prefix_a}
+format-disconnected-prefix-foreground = ${xrdb:n8}
+label-disconnected-foreground = ${xrdb:n11}
+label-connected-foreground = ${xrdb:n14}
 
 
 
@@ -156,19 +160,21 @@ type = internal/network
 interface = wlo1
 interval = 3.0
 format-connected-prefix = "WLN: "
-format-connected-prefix-foreground = ${env:inet_prefix_a}
+format-connected-prefix-foreground = ${xrdb:n8}
 label-connected = "%local_ip%"
 format-disconnected-prefix = "WLN: "
-format-disconnected-prefix-foreground = ${env:inet_prefix_a}
 label-disconnected = "down"
-label-disconnected-foreground = ${env:inactive_prefix_a}
+format-disconnected-prefix-foreground = ${xrdb:n8}
+label-disconnected-foreground = ${xrdb:n11}
+label-connected-foreground = ${xrdb:n14}
 
 [module/mem]
 type = internal/memory
 interval = 2
 format-prefix = "MEM: "
-format-prefix-foreground=${env:mem_prefix_a}
+format-prefix-foreground=${xrdb:n8}
 label = %percentage_used%%
+label-foreground=${xrdb:n13}
 
 [module/clock]
 type = internal/date
@@ -176,7 +182,7 @@ interval = 1
 date = "%Y.%m.%d %a"
 time = "%H:%M:%S"
 label = %date% %time%
-label-foreground = ${env:time_a}
+label-foreground = ${xrdb:n8}
 
 [module/vol]
 type = internal/alsa
@@ -190,51 +196,25 @@ master-soundcard = default
 
 interval = 1
 format-volume-prefix = "VOL: "
-format-volume-prefix-foreground=${env:vol_prefix_a}
+format-volume-prefix-foreground=${xrdb:n9}
 format-muted-prefix = "VOL: "
-format-muted-prefix-foreground=${env:vol_prefix_a}
+format-muted-prefix-foreground=${xrdb:n9}
 
 
 format-volume = "<label-volume> <bar-volume>"
 format-muted = "<label-muted>"
 label-muted = "muted"
-label-muted-foreground=${env:inactive_prefix_a}
+label-muted-foreground=${xrdb:n11}
 
-label-volume-foreground = ${env:active_prefix_a}
+label-volume-foreground = ${xrdb:n15}
 
 bar-volume-width = 10
 bar-volume-fill = =
-bar-volume-fill-foreground = ${env:bar_primary_a}
+bar-volume-fill-foreground = ${xrdb:n14}
 bar-volume-empty = -
-bar-volume-empty-foreground = ${env:bar_secondary_a}
+bar-volume-empty-foreground = ${xrdb:n12}
 bar-volume-indicator = ><
-bar-volume-indicator-foreground = ${env:bar_seperator_a}
-
-[module/music]
-type = internal/mpd
-host = 127.0.0.1
-format-online = "<label-song> @ <label-time> <bar-progress>"
-format-offline = "offline"
-format-offline-foreground=${env:inactive_prefix_a}
-
-format-online-prefix = "MPD: "
-format-online-prefix-foreground=${env:mpd_prefix_a}
-format-offline-prefix = "MPD: "
-format-offline-prefix-foreground=${env:mpd_prefix_a}
-
-label-song = %artist% - %title%
-label-song-maxlen = 50 
-label-song-ellipsis = true
-
-
-bar-progress-width = 15
-bar-progress-fill = =
-bar-progress-fill-foreground = ${env:bar_primary_a}
-bar-progress-empty = -
-bar-progress-empty-foreground = ${env:bar_secondary_a}
-bar-progress-indicator = >
-bar-volume-indicator-foreground = ${env:bar_seperator_a}
-
+bar-volume-indicator-foreground = ${xrdb:n13}
 
 [module/bat]
 type = internal/battery
@@ -243,15 +223,17 @@ adapter = AC
 battery = BAT0
 
 format-charging-prefix = "CRG: "
-format-charging-prefix-foreground=${env:bat_prefix_a}
+format-charging-prefix-foreground=${xrdb:n7}
 format-charging = "<label-charging>"
-label-charging = "%percentage%"
-label-charging-foreground = ${env:active_prefix_a}
+label-charging = "%percentage%%"
+label-charging-foreground = ${xrdb:n14}
 
 format-discharging-prefix = "DIS: "
-format-discharging-prefix-foreground=${env:bat_prefix_a}
+format-discharging-prefix-foreground=${xrdb:n7}
 format-discharging = "<label-discharging>"
-label-discharging = "%percentage%"
-label-discharging-foreground = ${env:bat_prefix_a}
+label-discharging = "%percentage%%"
+label-discharging-foreground = ${xrdb:n12}
 
+label-full = 100%
+label-full-foreground=${xrdb:n14}
 

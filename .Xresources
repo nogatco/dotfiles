@@ -7,25 +7,61 @@ Xft.antialias:	1
 Xft.autohint:	1
 Xft.hinting:	1
 
-!st.alpha: 100
-!*.alpha: 0
 
-! I no longer use URxvt
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
 
-!URxvt*font: xft:Hack Nerd Font Mono:pixelsize=11:style=Regular:antialias=true:hinting=true
-!URxvt*boldFont: xft:Hack Nerd Font Mono:pixelsize=11:style=Bold:antialias=true:hinting=true
-!URxvt*italicFont: xft:Hack Nerd Font Mono:pixelsize=11:style=Italic:antialias=true:hinting=true
-!URxvt*boldItalicont: xft:Hack Nerd Font Mono:pixelsize=11:style=Bold Italic:antialias=true:hinting=true
+*.n0: #2E3440
+*.n1: #3B4252
+*.n2: #434C5E
+*.n3: #4C566A
+*.n4: #D8DEE9
+*.n5: #E5E9F0
+*.n6: #ECEFF4
+*.n7: #8FBCBB
+*.n8: #88C0D0
+*.n9: #81A1C1
+*.n10: #5E81AC
+*.n11: #BF616A
+*.n12: #D08770
+*.n13: #EBCB8B
+*.n14: #A3BE8C
+*.n15: #B48EAD
 
-!URxvt.BoldFont: xft:Hack\ Nerd\ Font\ Mono:antialias=true:hinting=true:style=Bold:pixelsize=11
-!URxvt.ItalicFont: xft:Hack\ Nerd\ Font\ Mono:antialias=true:hinting=true:style=Italic:pixelsize=11
-!URxvt.BoldItalicFont: xft:Hack\ Nerd\ Font\ Mono:antialias=true:hinting=true:style=Bold\ Italic:pixelsize=11
 
-!URxvt*termName:                 rxvt-256color
-!URxvt.depth:                    32
+*.foreground:   nord4
+*.background:   nord0
+*.cursorColor:  nord4
+*fading: 35
+*fadeColor: nord3
 
-!URxvt.scrollBar:                false
-!URxvt.perl-ext:	 		default,matcher
-!URxvt.url-launcher:             firefox
-!URxvt.matcher.button: 		1
-!URxvt*background:		rgba:0000/0000/0000/9000
+*.color0: nord1
+*.color1: nord11
+*.color2: nord14
+*.color3: nord13
+*.color4: nord9
+*.color5: nord15
+*.color6: nord8
+*.color7: nord5
+*.color8: nord3
+*.color9: nord11
+*.color10: nord14
+*.color11: nord13
+*.color12: nord9
+*.color13: nord15
+*.color14: nord7
+*.color15: nord6
