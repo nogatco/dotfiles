@@ -9,7 +9,7 @@
 - doom emacs
 - neovim
 - powerlevel9k:oh-my-zsh@zsh
-- compton
+- compton-tyrone
 - ranger
 - i3lock-fancy
 
