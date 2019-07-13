@@ -5,7 +5,7 @@
 ## Programs & Tools Used
 - i3-gaps:xorg@Arch Linux
 - polybar
-- lukesmithxyz's [st build](https://github.com/lukesmithxyz/st) with the opacity tweaked
+- my [st build](https://github.com/x-zvf/st)
 - doom emacs
 - neovim
 - powerlevel9k:oh-my-zsh@zsh
