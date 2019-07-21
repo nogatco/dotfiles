@@ -38,7 +38,7 @@ exec_always --no-startup-id	~/scripts/autoname_workspaces.py
 exec_always --no-startup-id "killall compton; compton -b"
 #exec_always --no-startup-id wal -R
 exec_always --no-startup-id "killall dunst; dunst"
-exec_always --no-startup-id feh --bg-scale ~/Wal/bg.jpg
+exec_always --no-startup-id feh --bg-scale ~/Wal/bg.png
 
 # start a terminal
 bindsym $mod+Return exec st
@@ -174,5 +174,6 @@ bindsym $mod+Mod2+KP_9 workspace number 3; exec [ $(ps a | grep tmux | grep pers
 bindsym $mod+Mod2+KP_4 workspace number 4; exec [ $(ps a | grep firefox | wc -l) = 0 ] && firefox
 bindsym $mod+Mod2+KP_3 exec setxkbmap de -option caps:escape && autorandr lgh-right; restart
 bindsym $mod+Mod2+KP_1 exec ~/scripts/dmnt.sh
+bindsym $mod+Mod2+KP_2 exec ~/scripts/dumnt.sh
 # this is for my sfml dev stuff
 for_window [class="^_DEV_*"] floating enable

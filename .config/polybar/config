@@ -42,7 +42,7 @@ scroll-down = i3wm-wsprev
 # --- For my 3-monitor PC
 
 [bar/barl]
-monitor="DVI-I-1"
+monitor="DP-0"
 width = 100%
 height = 16
 

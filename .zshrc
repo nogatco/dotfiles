@@ -2,11 +2,18 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export PATH="$PATH:/home/be/inst/flutter/bin: /home/be/inst/android-sdk/platform-tools"
+export ANDROID_HOME="$HOME/inst/android-sdk"
+
+alias unfuckadb="sudo adb kill-server; sudo adb start-server; adb devices"
+
 #ALIASES
 alias yt-dl-song="youtube-dl -f bestaudio 0 -i --add-metadata --metadata-from-title \"'(?P<artist>.+?)\s*-\s*(?P<title>.+?)-.*'\" "
 alias yt-dl-cm-s="youtube-dl -x --audio-format best --audio-quality 0 -i --add-metadata --metadata-from-title"
 alias fucking="sudo !!"
 #eval $(thefuck --alias)
+
+alias adb=/home/be/inst/android-sdk/platform-tools/adb
 
 alias v=nvim
 alias music='systemctl start mpd --user;ncmpcpp'
