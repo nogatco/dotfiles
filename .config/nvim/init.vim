@@ -7,7 +7,9 @@ Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 Plug 'arcticicestudio/nord-vim'
 
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
+Plug 'w0rp/ale'
+Plug 'conornewton/vim-latex-preview'
 call plug#end()
 let g:airline_powerline_fonts = 1
 set colorcolumn=80,120
@@ -26,3 +28,5 @@ map <Right> <nop>
 set number
 set relativenumber
 
+nnoremap j gj
+nnoremap k gk
