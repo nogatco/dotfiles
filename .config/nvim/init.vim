@@ -1,10 +1,12 @@
 call plug#begin()
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 Plug 'arcticicestudio/nord-vim'
+Plug 'tpope/vim-surround'
 
 Plug 'bronson/vim-trailing-whitespace'
 "Plug 'Valloric/YouCompleteMe'
@@ -27,6 +29,14 @@ map <Right> <nop>
 
 set number
 set relativenumber
+
+
+nmap <silent> <A-h> :wincmd h<CR>
+nmap <silent> <A-j> :wincmd j<CR>
+nmap <silent> <A-k> :wincmd k<CR>
+nmap <silent> <A-l> :wincmd l<CR>
+nmap <silent> <A-n> :NERDTreeToggle<CR>
+
 
 nnoremap j gj
 nnoremap k gk

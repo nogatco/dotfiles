@@ -2,7 +2,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-export PATH="$PATH:/home/be/inst/flutter/bin: /home/be/inst/android-sdk/platform-tools"
+export PATH="$PATH:/home/xzvf/.gem/ruby/2.6.0/bin"
 export ANDROID_HOME="$HOME/inst/android-sdk"
 
 alias unfuckadb="sudo adb kill-server; sudo adb start-server; adb devices"
@@ -11,9 +11,11 @@ alias unfuckadb="sudo adb kill-server; sudo adb start-server; adb devices"
 alias yt-dl-song="youtube-dl -f bestaudio 0 -i --add-metadata --metadata-from-title \"'(?P<artist>.+?)\s*-\s*(?P<title>.+?)-.*'\" "
 alias yt-dl-cm-s="youtube-dl -x --audio-format best --audio-quality 0 -i --add-metadata --metadata-from-title"
 alias fucking="sudo !!"
-#eval $(thefuck --alias)
+eval $(thefuck --alias)
 
-alias adb=/home/be/inst/android-sdk/platform-tools/adb
+#Make make use 8 threads by default
+alias make="/usr/bin/make -j 8"
+export MAKEFLAGS='-j 8'
 
 alias v=nvim
 alias music='systemctl start mpd --user;ncmpcpp'
@@ -21,7 +23,8 @@ alias music='systemctl start mpd --user;ncmpcpp'
 alias wlan-up="sudo ip link set wlo1 up"
 alias wlan-down="sudo ip link set wlo1 down"
 
-alias l='ls -lah'
+alias l="lsd -lah"
+alias b="bat"
 
 alias gu="git add -u; git commit -m "
 #The. Best. Way. To. Commit.
@@ -29,11 +32,13 @@ alias gy='git commit -am "`curl -s http://whatthecommit.com/index.txt`"'
 # FOR Tmux
 export TERM="st-256color"
 
-export BROWSER="/usr/bin/firefox"
+export BROWSER="/usr/bin/firefox-developer-edition"
 
 alias tss="tmux new-session -A -s sys"
 alias tsp="tmux new-session -A -s personal"
 alias tsd="tmux new-session -A -s dev"
+
+alias mntshared="[[ -z $(mount | grep /shared) ]] && sudo mount -t ntfs-3g -o umask=022,gid=998,uid=1000 /dev/sda5 /shared"
 
 cblatex(){
     rm *.aux *.bbl *.bcf *.blg *.log *.run.xml *.toc
@@ -70,7 +75,6 @@ function start_agent {
     . "${SSH_ENV}" > /dev/null
     #/usr/bin/ssh-add;
 }
-
 # Source SSH settings, if applicable
 
 if [ -f "${SSH_ENV}" ]; then
@@ -82,7 +86,6 @@ if [ -f "${SSH_ENV}" ]; then
 else
     start_agent;
 fi
-
 
 
 # Path to your oh-my-zsh installation.
@@ -186,5 +189,6 @@ source $ZSH/oh-my-zsh.sh
 
 #bindkey -v
 
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR='nvim'
+export VISUAL='nvim'
+
