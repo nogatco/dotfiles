@@ -29,6 +29,10 @@ alias b="bat"
 alias gu="git add -u; git commit -m "
 #The. Best. Way. To. Commit.
 alias gy='git commit -am "`curl -s http://whatthecommit.com/index.txt`"'
+
+
+
+
 # FOR Tmux
 export TERM="st-256color"
 
@@ -39,6 +43,10 @@ alias tsp="tmux new-session -A -s personal"
 alias tsd="tmux new-session -A -s dev"
 
 alias mntshared="[[ -z $(mount | grep /shared) ]] && sudo mount -t ntfs-3g -o umask=022,gid=998,uid=1000 /dev/sda5 /shared"
+
+mkcd() {
+    mkdir -p "$1" && cd "$1"
+}
 
 cblatex(){
     rm *.aux *.bbl *.bcf *.blg *.log *.run.xml *.toc
