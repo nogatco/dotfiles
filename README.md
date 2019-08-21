@@ -11,7 +11,8 @@
 - powerlevel9k:oh-my-zsh@zsh
 - compton-tyrone
 - ranger
-- i3lock-fancy
+- i3lock
+- sox
 
 ## Install
 0. Install an arch install with a non-root user and the tools above
