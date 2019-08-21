@@ -56,6 +56,7 @@ WINDOW_ICONS = {
     'evince': fa.icons['file-pdf'],
     'feh': fa.icons['image'],
     'firefox': fa.icons['firefox'],
+    'firefoxdeveloperedition': fa.icons['firefox'],
     'google-chrome': fa.icons['chrome'],
     'gpick': fa.icons['eye-dropper'],
     'imv': fa.icons['image'],
