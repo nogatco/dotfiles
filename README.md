@@ -1,6 +1,14 @@
 # XZVF's Dotfiles
 
+![](https://img.shields.io/badge/WM-i3-green)
+![](https://img.shields.io/badge/OS-Arch Linux-blue)
+![](https://img.shields.io/badge/Maintained-Yes-brightgreen)
+![](https://img.shields.io/badge/Editor-NEOVIM-brightgreen)
+![](https://img.shields.io/badge/Font-Hack Nerd Font Mono-yellow)
+
+
 ![](scrots/s1.png)
+![screen lock](scrots/sclock.png)
 
 ## Programs & Tools Used
 - i3-gaps:xorg@Arch Linux
@@ -13,10 +21,10 @@
 - ranger
 - i3lock
 - sox
+- imagemagick
 
 ## Install
-0. Install an arch install with a non-root user and the tools above
-1. Copy the dotfiles. (Paths in the repo are relative to ~/)
+It's best to use GNU stow.
 
 # scripts
 the scripts folder contains:
