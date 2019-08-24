@@ -27,11 +27,13 @@ alias l="lsd -lah"
 alias b="bat"
 
 alias gu="git add -u; git commit -m "
+alias gpsh="git push"
+alias gpll="git pull"
+alias gcln="git clone"
+alias gcom="git commit -m"
+
 #The. Best. Way. To. Commit.
 alias gy='git commit -am "`curl -s http://whatthecommit.com/index.txt`"'
-
-
-
 
 # FOR Tmux
 export TERM="st-256color"
