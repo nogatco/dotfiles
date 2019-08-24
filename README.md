@@ -1,10 +1,10 @@
 # XZVF's Dotfiles
 
 ![](https://img.shields.io/badge/WM-i3-green)
-![](https://img.shields.io/badge/OS-Arch Linux-blue)
+![](https://img.shields.io/badge/OS-Arch%20Linux-blue)
 ![](https://img.shields.io/badge/Maintained-Yes-brightgreen)
 ![](https://img.shields.io/badge/Editor-NEOVIM-brightgreen)
-![](https://img.shields.io/badge/Font-Hack Nerd Font Mono-yellow)
+![](https://img.shields.io/badge/Font-Hack%20Nerd%20Font%20Mono-yellow)
 
 
 ![](scrots/s1.png)
