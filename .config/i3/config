@@ -40,6 +40,9 @@ exec_always --no-startup-id "killall compton; compton -b"
 exec_always --no-startup-id "killall dunst; dunst"
 exec_always --no-startup-id feh --bg-scale ~/Wal/bg.png
 
+# Autostart windows
+exec --no-startup-id "i3-msg workspace number 1; exec st -e '/bin/zsh' '-c' 'tmuxinator info'"
+
 # start a terminal
 bindsym $mod+Return exec st
 

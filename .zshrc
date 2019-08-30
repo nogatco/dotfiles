@@ -37,9 +37,7 @@ alias gy='git commit -am "`curl -s http://whatthecommit.com/index.txt`"'
 
 export BROWSER="/usr/bin/firefox-developer-edition"
 
-alias tss="tmux new-session -A -s sys"
-alias tsp="tmux new-session -A -s personal"
-alias tsd="tmux new-session -A -s dev"
+alias t=tmuxinator
 
 alias mntshared="[[ -z $(mount | grep /shared) ]] && sudo mount -t ntfs-3g -o umask=022,gid=998,uid=1000 /dev/sda5 /shared"
 
