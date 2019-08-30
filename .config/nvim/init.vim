@@ -43,3 +43,6 @@ nmap <silent> <A-w> :w <CR>
 
 nnoremap j gj
 nnoremap k gk
+
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
+

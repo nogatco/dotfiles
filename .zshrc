@@ -36,7 +36,7 @@ alias gcom="git commit -m"
 alias gy='git commit -am "`curl -s http://whatthecommit.com/index.txt`"'
 
 # FOR Tmux
-export TERM="st-256color"
+#export TERM="st-256color"
 
 export BROWSER="/usr/bin/firefox-developer-edition"
 
@@ -63,6 +63,12 @@ bvl(){
     pdflatex "$1".tex
     pdflatex "$1".tex
     evince "$1".pdf
+}
+wttr()
+{
+    local request="wttr.in/"
+    [ "$(tput cols)" -lt 125 ] && request+='?n'
+    curl -H "Accept-Language: ${LANG%_*}" --compressed "$request"
 }
 
 # FUCK MY SCHOOL'S PRINTER, seriously.
