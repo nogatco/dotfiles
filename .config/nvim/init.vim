@@ -24,6 +24,8 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 set termguicolors
 colorscheme nord
 
+"set guicursor
+
 map <Up>    <nop>
 map <Down>  <nop>
 map <Left>  <nop>

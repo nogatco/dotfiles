@@ -1,4 +1,3 @@
-#export TERM="xterm-256color"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -35,8 +34,6 @@ alias gcom="git commit -m"
 #The. Best. Way. To. Commit.
 alias gy='git commit -am "`curl -s http://whatthecommit.com/index.txt`"'
 
-# FOR Tmux
-#export TERM="st-256color"
 
 export BROWSER="/usr/bin/firefox-developer-edition"
 
