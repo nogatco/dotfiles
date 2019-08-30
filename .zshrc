@@ -29,6 +29,7 @@ alias gu="git add -u; git commit -m "
 alias gpsh="git push"
 alias gpll="git pull"
 alias gcln="git clone"
+alias gstat="git status"
 alias gcom="git commit -m"
 
 #The. Best. Way. To. Commit.
