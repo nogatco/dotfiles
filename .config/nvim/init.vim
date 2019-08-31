@@ -8,6 +8,7 @@ Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-surround'
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'wesQ3/vim-windowswap'
 "Plug 'Valloric/YouCompleteMe'
 Plug 'w0rp/ale'
 Plug 'conornewton/vim-latex-preview'
@@ -33,7 +34,6 @@ map <Right> <nop>
 
 set number
 set relativenumber
-
 
 nmap <silent> <A-h> :wincmd h<CR>
 nmap <silent> <A-j> :wincmd j<CR>
