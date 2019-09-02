@@ -35,6 +35,6 @@ the scripts folder contains:
 - and more
 
 # Wallpaper
-[this one](https://i.redd.it/59bsn5hgnojy.jpg)
+see Wal/bg.png
 
 ## HAPPY RICING!
