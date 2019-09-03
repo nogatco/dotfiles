@@ -53,6 +53,7 @@ while pgrep -x polybar >/dev/null; do sleep 1; done
 if [ "$(hostname -s)" = "beryllium" ]; then 
 	polybar barl &
 	polybar barr &
+    polybar barc &
 else
 	polybar bar0 &
 	if [[ "$(xrandr)" =~ "DP-3 con" ]]; then polybar bar1 & fi
