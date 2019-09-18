@@ -5,6 +5,7 @@ source ~/scripts/exports.sh
 source ~/scripts/aliases.sh
 source ~/scripts/functions.sh
 source ~/scripts/ssh_stuff.sh
+source ~/scripts/private_stuff.sh
 
 # Oh my zsh stuff:
 export ZSH="$HOME/.oh-my-zsh"
