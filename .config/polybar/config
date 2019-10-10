@@ -84,7 +84,7 @@ scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
 [bar/barr]
-#monitor="DP-4"
+monitor="DP-4"
 width = 100%
 height = 16
 
