@@ -42,7 +42,28 @@ scroll-down = i3wm-wsprev
 # --- For my 3-monitor PC
 
 [bar/barl]
-monitor="DP-0"
+monitor="DP-2"
+width = 100%
+height = 16
+
+background = ${xrdb:n0}
+foreground = ${xrdb:n4}
+
+font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
+
+
+#modules
+modules-left = sL i3 sR sL ethpc sR
+modules-center = sL xwindow sR
+modules-right = sL vol sR sL cpu sR sL mem sR sL clock sR
+
+;wm-restack = i3
+;override-redirect = true
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+[bar/barc]
+monitor="DVI-I-1"
 width = 100%
 height = 16
 
@@ -63,7 +84,7 @@ scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
 [bar/barr]
-#monitor="DVI-D-0"
+#monitor="DP-4"
 width = 100%
 height = 16
 
