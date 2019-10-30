@@ -1,3 +1,1 @@
-scripts/__pycache__
-scripts/private_stuff.sh
-.config/nvim/plugged
+.config/nvim/.netrwhis
