@@ -1,1 +1,3 @@
-.config/nvim/.netrwhis
+.config/nvim/.netrwhist
+.config/nvim/plugged
+__pycache__
