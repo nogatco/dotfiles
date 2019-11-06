@@ -7,5 +7,6 @@ xbindkeys &
 unclutter &
 setxkbmap -option caps:escape,compose:ralt gb
 
+autorandr -c
 exec i3
 

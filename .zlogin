@@ -7,7 +7,12 @@
 if [ -z "$(ssh-add -l | grep xzvf)" ]
 then
     ssh-add
-    mbsync -a
+    # Test network connectivity
+    ping -q -c2 1.1.1.1 > /dev/null
+    if [ $? -eq 0 ]
+    then
+        mbsync -a
+    fi
 fi
 
 # Autostart Xorg if this is a graphical session
