@@ -9,3 +9,5 @@
 (setq message-sendmail-extra-arguments '("--read-envelope-from"))
 (setq message-sendmail-f-is-evil t)
 (setq notmuch-archive-tags '("-inbox" "-unread" "-new"))
+
+(setq +latex-viewers '(zathura))
