@@ -40,3 +40,11 @@ topdfversion(){
 ftsp(){
     topdfversion "$1" "$2" 1.5
 }
+
+#start program detached from shell
+s() {
+    nohup $@ </dev/null >/dev/null 2>&1 &
+}
+sus() {
+    s sudo -E $@
+}
