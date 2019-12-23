@@ -8,10 +8,11 @@ if [ -z "$(ssh-add -l | grep xzvf)" ]
 then
     ssh-add
     # Test network connectivity
-    ping -q -c2 1.1.1.1 > /dev/null
+    ping -q -c1 1.1.1.1 > /dev/null
     if [ $? -eq 0 ]
     then
         mbsync -a
+        notmuch new
     fi
 fi
 
