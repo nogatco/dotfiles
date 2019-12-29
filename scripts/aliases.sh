@@ -46,3 +46,5 @@ alias b="bat"
 # Fix crappy software
 alias unfuckadb="sudo adb kill-server; sudo adb start-server; adb devices"
 
+
+alias findssh="sudo nmap -sS -p 22"
