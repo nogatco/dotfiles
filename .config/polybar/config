@@ -20,7 +20,7 @@ scroll-down = i3wm-wsprev
 
 #----External monitor
 [bar/bar1]
-monitor = "VIRTUAL4"
+monitor = "DP-3"
 width = 100%
 height = 16
 
