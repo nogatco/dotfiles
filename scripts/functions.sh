@@ -48,3 +48,14 @@ s() {
 sus() {
     s sudo -E $@
 }
+
+mntsecusb(){
+    sudo cryptsetup open $1 secusb
+    sudo mount /dev/mapper/secusb $2
+}
+umntsecusb(){
+    sudo umount $1
+    sudo cryptsetup close secusb
+}
+
+

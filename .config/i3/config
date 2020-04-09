@@ -31,14 +31,15 @@ floating_modifier $mod
 
 
 #Starting programs
-exec --no-startup-id ~/scripts/launch-applications.sh
 exec_always --no-startup-id	"pkill -f \"autoname_workspace.py\";~/scripts/autoname_workspaces.py"
 exec_always --no-startup-id	~/scripts/polybar-launcher.sh
 exec_always --no-startup-id	~/scripts/autoname_workspaces.py
 exec_always --no-startup-id "killall compton; compton -b"
 #exec_always --no-startup-id wal -R
 exec_always --no-startup-id "killall dunst; dunst"
-exec_always --no-startup-id feh --bg-scale ~/Wal/bg.png
+exec_always --no-startup-id feh --bg-fill ~/Wal/bg.png
+#exec_always --no-startup-id xsetroot -solid "#28282828"
+
 
 # Autostart windows
 exec --no-startup-id "i3-msg workspace number 1; exec st -e '/bin/zsh' '-c' 'tmuxinator info'"
@@ -149,9 +150,9 @@ bindsym $mod+r mode "resize"
 
 
 #border none
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 2
 # Gaps
-gaps inner 5
+gaps inner 0
 gaps outer 0
 #smart_borders on
 #smart_gaps on

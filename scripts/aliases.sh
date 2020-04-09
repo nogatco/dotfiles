@@ -46,5 +46,5 @@ alias b="bat"
 # Fix crappy software
 alias unfuckadb="sudo adb kill-server; sudo adb start-server; adb devices"
 
-
+alias startkdewayland="XDG_SESSION_TYPE=wayland dbus-run-session startplasma-wayland"
 alias findssh="sudo nmap -sS -p 22"
