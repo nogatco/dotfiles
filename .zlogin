@@ -17,4 +17,4 @@ fi
 
 # Autostart Xorg if this is a graphical session
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
-
+zsh

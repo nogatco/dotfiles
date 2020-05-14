@@ -10,6 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -34,10 +35,11 @@ floating_modifier $mod
 exec_always --no-startup-id	"pkill -f \"autoname_workspace.py\";~/scripts/autoname_workspaces.py"
 exec_always --no-startup-id	~/scripts/polybar-launcher.sh
 exec_always --no-startup-id	~/scripts/autoname_workspaces.py
-exec_always --no-startup-id "killall compton; compton -b"
+exec_always --no-startup-id "killall picom; picom -b"
 #exec_always --no-startup-id wal -R
 exec_always --no-startup-id "killall dunst; dunst"
 exec_always --no-startup-id feh --bg-fill ~/Wal/bg.png
+exec_always --no-startup-id libinput-gestures-setup start
 #exec_always --no-startup-id xsetroot -solid "#28282828"
 
 
@@ -66,6 +68,7 @@ bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
+
 
 # split in horizontal orientation
 bindsym $mod+b split h

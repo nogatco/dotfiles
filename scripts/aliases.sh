@@ -32,7 +32,7 @@ eval $(thefuck --alias)
 # Simple QOL improvements
 alias t=tmuxinator
 alias v=nvim
-alias sv="sudo vim"
+alias sv="sudo nvim"
 alias se="sudo -e"
 
 alias music='systemctl start mpd --user;ncmpcpp'
