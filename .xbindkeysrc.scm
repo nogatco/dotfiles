@@ -1,3 +1,7 @@
 (xbindkey '("XF86AudioRaiseVolume") "amixer set Master 1%+ unmute")
 (xbindkey '("XF86AudioLowerVolume") "amixer set Master 1%- unmute")
 (xbindkey '("XF86AudioMute") "amixer set Master mute")
+(xbindkey '("XF86AudioPrev") "mpc prev")
+(xbindkey '("XF86AudioNext") "mpc next")
+(xbindkey '("XF86AudioPlay") "mpc play")
+(xbindkey '("XF86AudioStop") "mpc pause")
