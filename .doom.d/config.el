@@ -18,3 +18,7 @@
 
 (setq +latex-viewers '(zathura))
 (setq company-idle-delay 0.1)
+
+;; C++
+(require 'rtags) ;; optional, must have rtags installed
+(cmake-ide-setup)
