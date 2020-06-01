@@ -15,6 +15,7 @@ Plug 'conornewton/vim-latex-preview'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+Plug 'rhysd/vim-clang-format'
 
 call plug#end()
 
@@ -48,3 +49,5 @@ nnoremap k gk
 
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
 
+let g:ale_completion_enabled = 1
+set omnifunc=ale#completion#OmniFunc
