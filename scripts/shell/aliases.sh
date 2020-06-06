@@ -7,6 +7,7 @@ alias gpll="git pull"
 alias gcln="git clone"
 alias gstat="git status"
 alias gcom="git commit -m"
+alias gdiff="git diff"
 
 #The. Best. Way. To. Commit.
 alias gy='git commit -am "`curl -s http://whatthecommit.com/index.txt`"'
