@@ -32,30 +32,30 @@ floating_modifier $mod
 
 
 #Starting programs
-exec_always --no-startup-id	"pkill -f \"autoname_workspace.py\";~/scripts/autoname_workspaces.py"
-exec_always --no-startup-id	~/scripts/polybar-launcher.sh
-exec_always --no-startup-id	~/scripts/autoname_workspaces.py
-exec_always --no-startup-id "killall picom; picom -b"
+#exec_always --no-startup-id	"pkill -f \"autoname_workspace.py\";~/scripts/autoname_workspaces.py"
+#exec_always --no-startup-id	~/scripts/polybar-launcher.sh
+#exec_always --no-startup-id	~/scripts/autoname_workspaces.py
+#exec_always --no-startup-id "killall picom; picom -b"
 #exec_always --no-startup-id wal -R
-exec_always --no-startup-id "killall dunst; dunst"
-exec_always --no-startup-id feh --bg-fill ~/Wal/bg.png
-exec_always --no-startup-id libinput-gestures-setup start
+#exec_always --no-startup-id "killall dunst; dunst"
+#exec_always --no-startup-id feh --bg-fill ~/Wal/bg.png
+#exec_always --no-startup-id libinput-gestures-setup start
 #exec_always --no-startup-id xsetroot -solid "#28282828"
 
 
 # Autostart windows
-exec --no-startup-id "i3-msg workspace number 1; exec st -e '/bin/zsh' '-c' 'tmuxinator info'"
+#exec --no-startup-id "i3-msg workspace number 1; exec st -e '/bin/zsh' '-c' 'tmuxinator info'"
 
 # start a terminal
-bindsym $mod+Return exec st
+#bindsym $mod+Return exec st
 
 # start a python shell
-bindsym $mod+Shift+Return exec st -e python3
+#bindsym $mod+Shift+Return exec st -e python3
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show combi
+#bindsym $mod+d exec rofi -show combi
 
 # change focus
 bindsym $mod+h focus left
@@ -182,3 +182,25 @@ bindsym $mod+Mod2+KP_5 exec ~/scripts/dpass.sh
 bindsym $mod+Mod2+KP_7 exec [ $(ps a | grep tmux | grep sys| wc -l) = 0 ] && st -e tmux new-session -A -s sys
 # this is for my sfml dev stuff
 for_window [class="^_DEV_*"] floating enable
+
+
+# Plasma compatibility improvements
+
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [class="yakuake"] floating enable
+for_window [class="systemsettings"] floating enable
+for_window [class="plasmashell"] floating enable;
+for_window [class="Plasma"] floating enable; border none
+for_window [title="plasma-desktop"] floating enable; border none
+for_window [title="win7"] floating enable; border none
+for_window [class="krunner"] floating enable; border none
+for_window [class="Kmix"] floating enable; border none
+for_window [class="Klipper"] floating enable; border none
+for_window [class="Plasmoidviewer"] floating enable; border none
+for_window [class="(?i)*nextcloud*"] floating disable
+for_window [class="plasmashell" window_type="notification"] border none, move right 700px, move down 450px
+no_focus [class="plasmashell" window_type="notification"]
+
+for_window [title="Desktop — Plasma"] kill; floating enable; border none
+
