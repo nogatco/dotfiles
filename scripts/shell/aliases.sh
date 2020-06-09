@@ -8,6 +8,7 @@ alias gcln="git clone"
 alias gstat="git status"
 alias gcom="git commit -m"
 alias gdiff="git diff"
+alias ga="git add"
 
 #The. Best. Way. To. Commit.
 alias gy='git commit -am "`curl -s http://whatthecommit.com/index.txt`"'
@@ -27,8 +28,8 @@ export MAKEFLAGS='-j 8'
 
 
 # Random
-alias fucking="sudo !!"
-eval $(thefuck --alias)
+#alias fucking="sudo !!"
+#eval $(thefuck --alias)
 
 # Simple QOL improvements
 alias t=tmuxinator
