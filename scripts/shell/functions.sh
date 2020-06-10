@@ -53,9 +53,12 @@ mntsecusb(){
     sudo cryptsetup open $1 secusb
     sudo mount /dev/mapper/secusb $2
 }
-umntsecusb(){
+umntsecusb() {
     sudo umount $1
     sudo cryptsetup close secusb
 }
 
+crypttab_entry_gen() {
+    echo luks-`sudo cryptsetup luksUUID $1` UUID=`sudo cryptsetup luksUUID $1` none
 
+}
