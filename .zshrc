@@ -24,7 +24,8 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="yyyy-mm-dd"
 
 plugins=(
-#  git
+   git
+   pass
 #  zsh-autosuggestions
 #  zsh-syntax-highlighting
 )

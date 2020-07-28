@@ -52,3 +52,6 @@ alias startkdewayland="XDG_SESSION_TYPE=wayland dbus-run-session startplasma-way
 alias findssh="sudo nmap -sS -p 22"
 
 alias xur="reboot"
+alias fm="mbsync -a && notmuch new"
+
+alias subl="/opt/sublime_text/sublime_text"
