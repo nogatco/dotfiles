@@ -2,8 +2,8 @@
 width = 100%
 height = 16
 
-background = ${xrdb:n0}
-foreground = ${xrdb:n4}
+background = ${xrdb:color0}
+foreground = ${xrdb:color7}
 
 font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
 
@@ -24,8 +24,8 @@ monitor = "DP-3"
 width = 100%
 height = 16
 
-background = ${xrdb:n0}
-foreground = ${xrdb:n4}
+background = ${xrdb:color0}
+foreground = ${xrdb:color7}
 
 font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
 
@@ -46,8 +46,8 @@ monitor="DP-2"
 width = 100%
 height = 16
 
-background = ${xrdb:n0}
-foreground = ${xrdb:n4}
+background = ${xrdb:color0}
+foreground = ${xrdb:color7}
 
 font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
 
@@ -67,8 +67,8 @@ monitor="DVI-D-0"
 width = 100%
 height = 16
 
-background = ${xrdb:n0}
-foreground = ${xrdb:n4}
+background = ${xrdb:color0}
+foreground = ${xrdb:color7}
 
 font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
 
@@ -89,8 +89,8 @@ width = 100%
 height = 16
 
 
-background = ${xrdb:n0}
-foreground = ${xrdb:n4}
+background = ${xrdb:color0}
+foreground = ${xrdb:color7}
 
 font-0 = Hack Nerd Font Mono:style=Regular:pixelsize=8
 
@@ -110,23 +110,23 @@ scroll-down = i3wm-wsprev
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:50:...%
-label-foreground = ${xrdb:n10}
+label-foreground = ${xrdb:color10}
 
 [module/cpu]
 type = internal/cpu
 interval = 1
 format-prefix = CPU: 
-format-prefix-foreground=${xrdb:n8}
+format-prefix-foreground=${xrdb:color7}
 label = %percentage:2%%
 
 [module/sR]
 type = custom/text
-content-foreground = ${xrdb:n3}
+content-foreground = ${xrdb:color3}
 content = " "
 
 [module/sL]
 type = custom/text
-content-foreground = ${xrdb:n3}
+content-foreground = ${xrdb:color3}
 content = " "
 
 [module/i3]
@@ -137,14 +137,14 @@ format = <label-state> <label-mode>
 
 label-separator = |
 label-separator-padding = 1
-label-separator-foreground = ${xrdb:n2}
+label-separator-foreground = ${xrdb:color2}
 label-mode = | [%mode%]
-label-mode-foreground = ${xrdb:n5}
+label-mode-foreground = ${xrdb:color5}
 label-focused =  current: %name%
-label-focused-foreground = ${xrdb:n7}
-label-unfocused-foreground = ${xrdb:n3}
+label-focused-foreground = ${xrdb:color7}
+label-unfocused-foreground = ${xrdb:color3}
 label-unfocused = %name%
-label-visible-foreground = ${xrdb:n5}
+label-visible-foreground = ${xrdb:color5}
 label-visible = %name%
 
 
@@ -153,26 +153,26 @@ type = internal/network
 interface = enp0s25
 interval = 3.0
 format-connected-prefix = "ETH: "
-format-connected-prefix-foreground = ${xrdb:n8}
+format-connected-prefix-foreground = ${xrdb:color7}
 label-connected = "%local_ip%"
 label-disconnected = "down"
 format-disconnected-prefix = "ETH: "
-format-disconnected-prefix-foreground = ${xrdb:n8}
-label-disconnected-foreground = ${xrdb:n11}
-label-connected-foreground = ${xrdb:n14}
+format-disconnected-prefix-foreground = ${xrdb:color7}
+label-disconnected-foreground = ${xrdb:color11}
+label-connected-foreground = ${xrdb:color14}
 
 [module/ethpc]
 type = internal/network
 interface = enp3s0
 interval = 3.0
 format-connected-prefix = "ETH: "
-format-connected-prefix-foreground = ${xrdb:n8}
+format-connected-prefix-foreground = ${xrdb:color7}
 label-connected = "%local_ip%"
 label-disconnected = "down"
 format-disconnected-prefix = "ETH: "
-format-disconnected-prefix-foreground = ${xrdb:n8}
-label-disconnected-foreground = ${xrdb:n11}
-label-connected-foreground = ${xrdb:n14}
+format-disconnected-prefix-foreground = ${xrdb:color7}
+label-disconnected-foreground = ${xrdb:color11}
+label-connected-foreground = ${xrdb:color14}
 
 
 
@@ -181,21 +181,21 @@ type = internal/network
 interface = wlo1
 interval = 3.0
 format-connected-prefix = "WLN: "
-format-connected-prefix-foreground = ${xrdb:n8}
+format-connected-prefix-foreground = ${xrdb:color7}
 label-connected = "%local_ip%"
 format-disconnected-prefix = "WLN: "
 label-disconnected = "down"
-format-disconnected-prefix-foreground = ${xrdb:n8}
-label-disconnected-foreground = ${xrdb:n11}
-label-connected-foreground = ${xrdb:n14}
+format-disconnected-prefix-foreground = ${xrdb:color7}
+label-disconnected-foreground = ${xrdb:color11}
+label-connected-foreground = ${xrdb:color14}
 
 [module/mem]
 type = internal/memory
 interval = 2
 format-prefix = "MEM: "
-format-prefix-foreground=${xrdb:n8}
+format-prefix-foreground=${xrdb:color7}
 label = %percentage_used%%
-label-foreground=${xrdb:n13}
+label-foreground=${xrdb:color13}
 
 [module/clock]
 type = internal/date
@@ -203,7 +203,7 @@ interval = 1
 date = "%Y.%m.%d %a"
 time = "%H:%M:%S"
 label = %date% %time%
-label-foreground = ${xrdb:n8}
+label-foreground = ${xrdb:color7}
 
 [module/vol]
 type = internal/alsa
@@ -217,25 +217,25 @@ master-soundcard = default
 
 interval = 1
 format-volume-prefix = "VOL: "
-format-volume-prefix-foreground=${xrdb:n9}
+format-volume-prefix-foreground=${xrdb:color9}
 format-muted-prefix = "VOL: "
-format-muted-prefix-foreground=${xrdb:n9}
+format-muted-prefix-foreground=${xrdb:color9}
 
 
 format-volume = "<label-volume> <bar-volume>"
 format-muted = "<label-muted>"
 label-muted = "muted"
-label-muted-foreground=${xrdb:n11}
+label-muted-foreground=${xrdb:color11}
 
-label-volume-foreground = ${xrdb:n15}
+label-volume-foreground = ${xrdb:color15}
 
 bar-volume-width = 10
 bar-volume-fill = =
-bar-volume-fill-foreground = ${xrdb:n14}
+bar-volume-fill-foreground = ${xrdb:color14}
 bar-volume-empty = -
-bar-volume-empty-foreground = ${xrdb:n12}
+bar-volume-empty-foreground = ${xrdb:color12}
 bar-volume-indicator = ><
-bar-volume-indicator-foreground = ${xrdb:n13}
+bar-volume-indicator-foreground = ${xrdb:color13}
 
 [module/bat]
 type = internal/battery
@@ -244,17 +244,17 @@ adapter = AC
 battery = BAT0
 
 format-charging-prefix = "CRG: "
-format-charging-prefix-foreground=${xrdb:n7}
+format-charging-prefix-foreground=${xrdb:color7}
 format-charging = "<label-charging>"
 label-charging = "%percentage%%"
-label-charging-foreground = ${xrdb:n14}
+label-charging-foreground = ${xrdb:color14}
 
 format-discharging-prefix = "DIS: "
-format-discharging-prefix-foreground=${xrdb:n7}
+format-discharging-prefix-foreground=${xrdb:color7}
 format-discharging = "<label-discharging>"
 label-discharging = "%percentage%%"
-label-discharging-foreground = ${xrdb:n12}
+label-discharging-foreground = ${xrdb:color12}
 
 label-full = 100%
-label-full-foreground=${xrdb:n14}
+label-full-foreground=${xrdb:color14}
 
