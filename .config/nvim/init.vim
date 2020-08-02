@@ -5,8 +5,11 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+
 "Plug 'arcticicestudio/nord-vim'
-Plug 'altercation/vim-colors-solarized'
+"Plug 'altercation/vim-colors-solarized'
+Plug 'lifepillar/vim-solarized8'
+
 Plug 'tpope/vim-surround'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'wesQ3/vim-windowswap'
@@ -27,7 +30,7 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 set termguicolors
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme solarized8
 
 "set guicursor
 
