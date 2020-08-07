@@ -12,6 +12,8 @@ alias gcom="git commit -m"
 alias gdiff="git diff"
 alias ga="git add"
 
+alias ogh="$BROWSER https://github.com/x-zvf"
+
 #The. Best. Way. To. Commit.
 alias gy='git commit -am "`curl -s http://whatthecommit.com/index.txt`"'
 
