@@ -45,6 +45,13 @@ exec_always --no-startup-id feh --bg-fill ~/Wal/bg.png
 #exec_always --no-startup-id xsetroot -solid "#28282828"
 
 
+# class                 border  backgr. text    indicator
+client.focused          #002b36 #586e75 #fdf6e3 #268bd2
+client.focused_inactive #002b36 #073642 #839496 #073642
+client.unfocused        #002b36 #073642 #839496 #073642
+client.urgent           #002b36 #dc322f #fdf6e3 #002b36
+
+
 # Autostart windows
 #exec --no-startup-id "i3-msg workspace number 1; exec st -e '/bin/zsh' '-c' 'tmuxinator info'"
 
