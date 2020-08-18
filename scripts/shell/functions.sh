@@ -60,5 +60,13 @@ umntsecusb() {
 
 crypttab_entry_gen() {
     echo luks-`sudo cryptsetup luksUUID $1` UUID=`sudo cryptsetup luksUUID $1` none
-
 }
+
+
+# git add -u; git commit -m; git push
+gucp() {
+    git add -u
+    git commit -m "$1"
+    git push
+}
+
