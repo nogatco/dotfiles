@@ -1,5 +1,5 @@
 {
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "workbench.colorTheme": "Solarized Dark",
     "editor.fontFamily": "'Hack Nerd Font Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 16,
@@ -9,5 +9,6 @@
     "keyboard.dispatch": "keyCode",
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "workbench.iconTheme": "openhab"
 }
