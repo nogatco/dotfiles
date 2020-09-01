@@ -5,4 +5,4 @@ export ANDROID_HOME="$HOME/inst/android-sdk"
 export BROWSER="/usr/bin/firefox-developer-edition"
 export EDITOR='nvim'
 export VISUAL='nvim'
-export MOZ_X11_EGL=1
+#export MOZ_X11_EGL=1
