@@ -64,3 +64,4 @@ alias smerge="/opt/sublime_merge/sublime_merge"
 alias nvmon="watch -n1 nvidia-smi"
 
 alias c="curl"
+alias fucking="sudo"
