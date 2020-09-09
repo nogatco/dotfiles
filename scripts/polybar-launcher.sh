@@ -50,11 +50,15 @@ while pgrep -x polybar >/dev/null; do sleep 1; done
 
 # Launch bars depending on which machine I'm on
 
-if [ "$(hostname -s)" = "beryllium" ]; then 
+if [ "$(hostname -s)" = "beryllium" ]; then
 	polybar barl &
 	polybar barr &
     polybar barc &
 else
 	polybar bar0 &
-	polybar bar1 &
+    if [ "$(autorandr | grep '(current)' | cut -d ' ' -f 1)" = "lghtop" ]; then
+        polybar bar1lgh &
+    else
+        polybar bar1 &
+    fi
 fi
