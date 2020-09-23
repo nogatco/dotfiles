@@ -65,3 +65,6 @@ alias nvmon="watch -n1 nvidia-smi"
 
 alias c="curl"
 alias fucking="sudo"
+
+alias mhsp="~/scripts/makehotspot.sh"
+alias khsp="~/scripts/killhotspot.sh"
