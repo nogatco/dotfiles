@@ -1,5 +1,5 @@
 {
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "workbench.colorTheme": "Solarized Dark",
     "editor.fontFamily": "'Hack Nerd Font Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 16,
@@ -10,5 +10,17 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.iconTheme": "openhab"
+    "workbench.iconTheme": "openhab",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    }
 }
