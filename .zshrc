@@ -26,9 +26,10 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(
    git
    pass
-#  zsh-autosuggestions
+  zsh-autosuggestions
 #  zsh-syntax-highlighting
 )
+bindkey -v
 
 source $ZSH/oh-my-zsh.sh
 
