@@ -5,6 +5,11 @@ mkcd() {
     mkdir -p "$1" && cd "$1"
 }
 
+# fast copy everything from $1 dir to $2
+fcpdir() {
+    (cd "$1"; tar -cf - . ) | (cd "$2"; tar -xf - )
+}
+
 # clean build latex
 cblatex(){
     rm *.aux *.bbl *.bcf *.blg *.log *.run.xml *.toc
