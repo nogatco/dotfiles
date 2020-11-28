@@ -24,7 +24,7 @@ Plug 'rhysd/vim-clang-format'
 call plug#end()
 
 let g:airline_powerline_fonts = 1
-set colorcolumn=80,120
+set colorcolumn=81,121
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 set termguicolors
