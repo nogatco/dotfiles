@@ -59,7 +59,7 @@ client.urgent           #002b36 #dc322f #fdf6e3 #002b36
 bindsym $mod+Return exec st
 
 # start a python shell
-#bindsym $mod+Shift+Return exec st -e python3
+bindsym $mod+Shift+Return exec st -e bpython
 # kill focused window
 bindsym $mod+Shift+q kill
 
