@@ -234,7 +234,7 @@ type = internal/alsa
 ; Usually in the format hw:# where # is the card number
 ; You can find the different card numbers in `/proc/asound/cards`
 master-soundcard = default
-: speaker-soundcard = 0
+speaker-soundcard = 0
 ; headphone-soundcard = 0
 
 interval = 1
