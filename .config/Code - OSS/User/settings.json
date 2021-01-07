@@ -10,7 +10,7 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.iconTheme": "openhab",
+    "workbench.iconTheme": "vs-seti",
     "[dart]": {
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
@@ -22,5 +22,6 @@
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": false
-    }
+    },
+    "remote.autoForwardPorts": false
 }

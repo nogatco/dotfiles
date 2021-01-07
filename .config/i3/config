@@ -37,7 +37,7 @@ exec_always --no-startup-id autorandr -c
 exec_always --no-startup-id	"pkill -f \"autoname_workspace.py\";~/scripts/autoname_workspaces.py"
 exec_always --no-startup-id	~/scripts/polybar-launcher.sh
 exec_always --no-startup-id	~/scripts/autoname_workspaces.py
-exec_always --no-startup-id "killall picom; picom -b"
+#exec_always --no-startup-id "killall picom; picom -b"
 #exec_always --no-startup-id wal -R
 exec_always --no-startup-id "killall dunst; dunst"
 exec_always --no-startup-id feh --bg-fill ~/Wal/bg.png
@@ -46,10 +46,37 @@ exec_always --no-startup-id feh --bg-fill ~/Wal/bg.png
 
 
 # class                 border  backgr. text    indicator
-client.focused          #002b36 #586e75 #fdf6e3 #268bd2
-client.focused_inactive #002b36 #073642 #839496 #073642
-client.unfocused        #002b36 #073642 #839496 #073642
-client.urgent           #002b36 #dc322f #fdf6e3 #002b36
+#client.focused          #002b36 #586e75 #fdf6e3 #268bd2
+#client.focused_inactive #002b36 #073642 #839496 #073642
+#client.unfocused        #002b36 #073642 #839496 #073642
+#client.urgent           #002b36 #dc322f #fdf6e3 #002b36
+
+# gruvbox colours from: https://github.com/a-schaefers/i3-wm-gruvbox-theme/blob/master/i3/config
+
+# set primary gruvbox colorscheme colours
+set $bg #282828
+set $red #cc241d
+set $green #98971a
+set $yellow #d79921
+set $blue #458588
+set $purple #b16286
+set $aqua #689d68
+set $gray #a89984
+set $darkgray #1d2021
+
+# green gruvbox
+# class                 border|backgr|text|indicator|child_border
+#client.focused          $green $green $darkgray $purple $darkgray
+#client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
+#client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
+#client.urgent           $red $red $white $red $red
+
+# blue gruvbox
+# class                 border|backgr|text|indicator|child_border
+client.focused          $blue $blue $darkgray $purple $darkgray
+client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
+client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
+client.urgent           $red $red $white $red $red
 
 
 # Autostart windows

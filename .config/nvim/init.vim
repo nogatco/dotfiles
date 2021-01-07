@@ -5,6 +5,12 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+Plug 'airblade/vim-gitgutter'
+
+"Plug 'tjdevries/colorbuddy.nvim'
+"Plug 'tjdevries/gruvbuddy.nvim'
+
+Plug 'morhetz/gruvbox'
 
 "Plug 'arcticicestudio/nord-vim'
 "Plug 'altercation/vim-colors-solarized'
@@ -27,10 +33,11 @@ let g:airline_powerline_fonts = 1
 set colorcolumn=81,121
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 
+
 set termguicolors
 syntax enable
 set background=dark
-colorscheme solarized8
+"colorscheme solarized8
 
 "set guicursor
 
@@ -57,3 +64,6 @@ let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
 
 let g:ale_completion_enabled = 1
 set omnifunc=ale#completion#OmniFunc
+
+"lua require('colorbuddy').colorscheme('gruvbuddy')
+colorscheme gruvbox
